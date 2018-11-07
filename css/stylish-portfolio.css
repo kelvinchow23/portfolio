@@ -19,8 +19,8 @@ body {
 }
 
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .content-section-heading h2 {
@@ -86,15 +86,14 @@ h6 {
 }
 
 .masthead {
-  min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  padding-bottom: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/other/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/other/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,89 +215,27 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.callout {
-  padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-callout.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.toronto {
+  height: 10rem;
+  width:  10rem;
+  content: url("../img/other/toronto.jpg"); 
 }
 
-.callout h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: block;
-  max-width: 30rem;
+.portfolio {
+	min-height: 30rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
+.waterloo {
+  height: 10rem;
+  width:  10rem;
+  content: url("../img/other/waterloo.png"); 
 }
 
-.portfolio-item .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-}
-
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
+.container: {
+padding-right: 0px;
+padding-left: 0px;
 }
 
 footer.footer {
@@ -330,6 +267,41 @@ a {
 
 a:hover, a:focus, a:active {
   color: #155d74;
+}
+.carousel-inner {
+	margin: auto;
+	height: 35rem;
+}
+
+.carousel-item {
+	height:34rem;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F50' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev {
+	left: -1.5rem;
+	width: 5%;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F50' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next {
+	right: -1.5rem;
+	width: 5%;
+}
+
+.carousel-indicators li {
+  background-color: rgb(255,165,0);
+  bottom: -0.5rem;
+}
+
+.carousel-indicators .active{
+    background-color: #ff7f50;
 }
 
 .btn-primary {
