@@ -5,8 +5,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Kelvin's Portfolio</title>
 
@@ -58,11 +56,11 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1">MY "CUTE" PORTFOLIO</h1>
+        <h1 class="mb-1">MY PORTFOLIO</h1>
         <h3 class="mb-5">
           <em>Kelvin Chow</em>
         </h3>
-		<div class="row" id="about">
+		<div class="row mt-2" id="about">
           <div class="col">			
 		  <a class="js-scroll-trigger" href="#display">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -121,17 +119,14 @@
     <!-- About -->
     <section class="portfolio bg-white">
       <div class="container text-center">
+	  <h2>Hello!</h2>
         <div class="row">
 		  <div class="col toronto"></div>
           <div class="col-8">
-            <h2>Hello!</h2>
             <p class="lead mb-2">My name is Kelvin and I am a prospective PhD student. 
 			Currently, I am a masters student at the University of Toronto pursuing research 
-			in the fields of microfluidics, bioprinting, and tissue engineering.  I completed my
-			bachelors at the University of Waterloo in Mechanical Engineering.  Please feel free to browse through
-			my collection of projects I have recently worked on.  Almost all of the projects were collaborative, and I have
-			put an emphasis on my contributions in these projects.  I have put an asterisk next to work that I take zero credit for.
-			Thank you for taking the time to review my application!</p>
+			in the fields of organ-on-a-chip, bioprinting, and tissue engineering.  I completed my bachelors at the University of Waterloo in Mechanical Engineering.  Please feel free to browse through
+			my collection of projects I have worked on over the last 3 years.  Please navigate each project using the side arrows.  Almost all of the projects were collaborative, and I have put an emphasis on my contributions in these projects.  I have put an asterisk next to work that I take zero credit for.</p>
           </div>
 		  <div class="col waterloo"></div>
 
@@ -142,31 +137,100 @@
     <!-- Reconfigurable Display -->
     <section class="portfolio bg-secondary text-white text-center" id="display">
       <div class="container carousel slide" id="discar" data-ride="carousel" data-interval="0">
+	  <ol class="carousel-indicators">
+		<li data-target="#discar" data-slide-to="0" class="active"></li>
+		<li data-target="#discar" data-slide-to="1"></li>
+		<li data-target="#discar" data-slide-to="2"></li>
+		<li data-target="#discar" data-slide-to="3"></li>
+		<li data-target="#discar" data-slide-to="4"></li>
+	  </ol>
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Reconfigurable Display </h2>
+				<h2 class="mx-auto mb-2">Reconfigurable Display </h2>
+				<h3 class="mb-2">Can you fit a laptop into your pocket? </h3>
 				</div>
-				<p>Have you ever missed and your alarm and missed an important meeting, an exam, or a flight?  This common occurance
-		is an extremely frustrating scenario for those that have trouble hearing their alarm in the morning.</p>
+					<p>Moore's law drives technological advancement to make anything containing electronics smaller, true for most cases.  However, arguably the most important, pervasive electronic device, the cellphone, defies this trend.  Why is this?  If you were to narrow it down to	one reason, it is the trade-off between convenience and practicality.  Everyone would rather carry around a lightweight phone in their pocket, but people also want large electronic displays, which offer more utility for just about every application for phones other
+					than using the phone as a phone.  This display is the geometric constraint of most cell phones. This trade-off between convenience and practicality is even more visible with tablets, a once considered niche product between a phone and a laptop.</p>
+					<p>Research in this field place rigid LEDs on soft flexible, stretchable substrates.  The key issue with this approach is once the substrate is stretched, the pixel density decreases, reducing the image quality.  This project proposes a different approach to this problem.  
+				<div class="row">	
+					<div class="col-1"></div>
+					<figure class="figure col-4 align-self-center">
+						<img src="./img/reconfigurable display/intro.PNG" class="img-fluid"></img>
+					</figure>
+					<div class="col-6">
+						<img src="./img/reconfigurable display/phone size.png" class="img-fluid"></img>
+					</div>
+				</div>			
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">The Blue Clock </h2>
+				<h2 class="mx-auto mb-3">The Initial Design </h2>
 				</div>
-					<img src="./img/tilting alarm bed/render.jpg" class="img-fluid d-flex float-left mb-4 col-8"></img>
-					<p class="col-4 d-flex flex-wrap">Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed 
-	acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no 
-	longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>
+					<p>The first design proposed a solution where 16 individual square "islands", each representing an LED, would be constrained to move uniformly.  Each island was constrained to move linearly on a track and connected to other islands via guide arms.  By moving one island, all islands would move simultaneously.</p>
+					<p> Two major problems of this design forced a redesign.  First, this design required extra space in order to work, defeating the purpose of having a compact design.  Second, this design shares the same flaw as the flexible substrate design, where there are gaps in between islands, reducing pixel density when stretched. </p>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-6">
+					<img src="./img/reconfigurable display/motor stretch.gif" class="img-fluid"></img>
+					</div>
+					<div class="col-4">
+					<img src="./img/reconfigurable display/remove.PNG" class="img-fluid"></img>
+					</div>
+				</div>
 				
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Proof of Concept Prototype</h2>
+				<h2 class="mx-auto mb-3">Re-Designing the Prototype</h2>
 				</div>
-						<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid float-left mb-4 col-7"></img>
-					<p class="col-5 d-flex align-items-center">Once designed, an initial prototype is built of popsicle sticks and glue.  This prototype allows us to visualize
-the vision and assist with clarifying the direction for future design iterations.  Shown is Matt Damon rolling out of bed in style. </p>
+				<div class="row">
+					<figure class="figure col-3">
+						<img src="./img/reconfigurable display/blocks.png" class="img-fluid""></img>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem">Caption here.</figcaption>
+					</figure>
+					<figure class="figure col-6">
+						<img src="./img/reconfigurable display/link.PNG" class="img-fluid""></img>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem">Caption here.</figcaption>
+					</figure>
+					<figure class="figure col-2">
+						<img src="./img/reconfigurable display/hoberman.gif" class="img-fluid""></img>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem">Caption here.</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<div class="col-9">
+						<img src="./img/reconfigurable display/solidworks stretch.png" class="img-fluid"></img>					
+					</div>
+					<p class="col-3">Caption here.</p>
+				</div>	
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Bringing the Design into Reality</h2>
+				</div>
+				<div class="row mb-3">
+					<div class="col-8">
+						<img src="./img/reconfigurable display/all parts.jpg" class="img-fluid"></img>					
+					</div>
+					<p class="col-4">Insert text here.</p>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<img src="./img/reconfigurable display/expand2.gif" class="img-fluid"></img>					
+					</div>
+					<div class="col-3">
+						<img src="./img/reconfigurable display/wiring.jpg" class="img-fluid"></img>					
+					</div>
+					<div class="col-3">
+						<img src="./img/reconfigurable display/lights.jpg" class="img-fluid"></img>					
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Further Development</h2>
+				</div>
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#discar" role="button" data-slide="prev">
@@ -183,79 +247,65 @@ the vision and assist with clarifying the direction for future design iterations
 	    <!-- Balance Rehab Game -->
     <section class="portfolio bg-primary text-white text-center" id="balance">
       <div class="container carousel slide" id="balcar" data-ride="carousel" data-interval="0">
+	  <ol class="carousel-indicators">
+		<li data-target="#balcar" data-slide-to="0" class="active"></li>
+		<li data-target="#balcar" data-slide-to="1"></li>
+		<li data-target="#balcar" data-slide-to="2"></li>
+		<li data-target="#balcar" data-slide-to="3"></li>
+		<li data-target="#balcar" data-slide-to="4"></li>
+	  </ol>
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Balance Rehabilitation Game </h2>
 				</div>
-				<p>Individuals suffering from spinal cord injuries (SCI) often have balance instability caused by a reduced neural
-				control of lower-limbed muscles.  Rehabilitation tools have been demonstrated to be effective in repairing
-				the disconnect between brain and body.  Two rehabilitation tools of interest are visual feedback training (VFT) and functional
-				electrical stimulation (FES) therapy.</p>
+				<p>Individuals suffering from spinal cord injuries (SCI) often have balance instability caused by a reduced neural control of lower-limbed muscles.  Rehabilitation tools have been demonstrated to be effective in repairing the disconnect between brain and body.  Two rehabilitation tools of interest are visual feedback training (VFT) and functional electrical stimulation (FES) therapy.</p>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">VFT + FES Therapy </h2>
 				</div>
 					<img src="./img/balance game/vft fes.png" class="img-fluid d-flex float-left mb-4 col-8" style="height: 30rem"></img>
-					<p class="col-4 d-flex flex-wrap">We propose a balance rehabilitation tool that combines both visual feedback training 
-					with functional electrical stimulation therapy.  Our hypothesis is By combining an engaging training game with stimulation
-					therapy, we hypothesize our balance training tool would amplify and accelerate the rehabilitation effects compared to single-modal
-					approaches.  For more details, refer <u><a href="https://doi.org/10.17975/sfj-2017-016"
-					style="color:white" target="_blank">here</a></u></p>
-				
+					<p class="col-4 d-flex flex-wrap">We propose a balance rehabilitation tool that combines both visual feedback training with functional electrical stimulation therapy.  Our hypothesis is By combining an engaging training game with stimulation therapy, we hypothesize our balance training tool would amplify and accelerate the rehabilitation effects compared to single-modal approaches.  For more details, refer <u><a href="https://doi.org/10.17975/sfj-2017-016" style="color:white" target="_blank">here</a></u></p>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Four Task-Oriented Games</h2>
-				<p style="line-height: 1rem"> One training session includes 4 games played 3 times each.  The games
-				are designed to emulate a collection of muscle strengthening exercises for balance rehabilitation.  Each game displays a transient 
-				coloured dot on the screen, displaying the individual's centre of position on the force plate.  </p>
+				<p style="line-height: 1rem"> One training session includes 4 games played 3 times each.  The games are designed to emulate a collection of muscle strengthening exercises for balance rehabilitation. Each game displays a transient coloured dot on the screen, displaying the individual's centre of position on the force plate.</p>
 				</div>
 				<div class="d-flex flex-row">
 					<figure class="figure col-6">
 						<img src="./img/balance game/target.png" class="img-fluid" style="height:9rem; width=15rem"></img>
-						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>TARGET:</strong> <font size="-1">This game trains an individual to stand
-						as still as possible in the optimal balance position.  The objective is to keep the red dot as close to the centre as possible.</font></figcaption>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>TARGET:</strong> <font size="-1">This game trains an individual to stand as still as possible in the optimal balance position. The objective is to keep the red dot as close to the centre as possible.</font></figcaption>
 					</figure>
 					<figure class="figure col-6">
 						<img src="./img/balance game/hunting.png" class="img-fluid" style="height:9rem; width=15rem"></img>
-						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appears and the 
-						objective is to move the red dot inside that target and hold it for 3 seconds.  Once successful, a new target 
-						appears in a different location.  This game trains muscle reflexes by inducing constant shifting of body weight.</font></figcaption>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appears and the objective is to move the red dot inside that target and hold it for 3 seconds.  Once successful, a new target appears in a different location. This game trains muscle reflexes by inducing constant shifting of body weight.</font></figcaption>
 					</figure>
 				</div>
 				<div class="d-flex flex-row">
 					<figure class="figure col-6">
 						<img src="./img/balance game/ellipse.png" class="img-fluid" style="height:9rem; width=15rem"></img>
-						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>ELLIPSE:</strong> <font size="-1">A target follows an elliptical orbit at
-						the edge of an individual's range of motion.  While the dot is in the target, the target position 
-						increments along the orbit path.  This forces the participant to keep their centre of balance away from the middle for the entire duration of the game.</font></figcaption>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>ELLIPSE:</strong> <font size="-1">A target follows an elliptical orbit at the edge of an individual's range of motion.  While the dot is in the target, the target position increments along the orbit path.  This forces the participant to keep their centre of balance away from the middle for the entire duration of the game.</font></figcaption>
 					</figure>
 					<figure class="figure col-6">
 						<img src="./img/balance game/colour.png" class="img-fluid" style="height:9rem; width=15rem"></img>
-						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>COLOUR MATCHING:</strong> <font size="-1">In this game, the dot changes colour.  The 
-						individual needs to move the dot in the matching coloured target. Once successful, the dot changes to a different 
-						colour.  This game requires some mental processing as well as causing drastic shifts in body weight.</font></figcaption>
+						<figcaption class="figure-caption" style="color:white; line-height:1rem"><strong>COLOUR MATCHING:</strong> <font size="-1">In this game, the dot changes colour.  The individual needs to move the dot in the matching coloured target. Once successful, the dot changes to a different	colour.  This game requires some mental processing as well as causing drastic shifts in body weight.</font></figcaption>
 					</figure>
 				</div>
 					
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Balance Assessments</h2>
-				<p>The training session also includes two balance assessments to track progress of balance improvement over multiple training
-				sessions.</p>
+				<h2 class="mx-auto mb-3">Two Balance Assessments</h2>
+				<p>The training session also includes two balance assessments to track progress of balance improvement over multiple training sessions.</p>
 				</div>
 				<div class="row">
 					<div class="col-6">					
 						<img src="./img/balance game/static.png" class="img-fluid"></img>
 					</div>
 					<div class="col-5">
-						<p>ELLIPSE A circular target follows an elliptical orbit along
-						the boundaries of an individual's range of motion.  While the dot is in the target, the target position 
-						increments along the orbit path.  This game forces the participant to keep their centre of balance away 
-						from the middle for the entire duration of the game.</p>
+						<p>ELLIPSE A circular target follows an elliptical orbit along the boundaries of an individual's range of motion.  While the dot is in the target, the target position	increments along the orbit path. This game forces the participant to keep their centre of balance away from the middle for the entire duration of the game.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -279,14 +329,10 @@ the vision and assist with clarifying the direction for future design iterations
 					<img src="./img/balance game/data.png" class="img-fluid"></img>
 					</div>
 					<div class="col-6">
-					<p class="mb-4">Seven able-bodied individuals ran through the training session to test the effectiveness of the system.
-					Three out of four games (y-axis) showed bivariate correlation between balance ability (x-axis), indicating the games were appropriately designed.</p> 
+					<p class="mb-4">Seven able-bodied individuals ran through the training session to test the effectiveness of the system. Three out of four games (y-axis) showed bivariate correlation between balance ability (x-axis), indicating the games were appropriately designed.</p> 
 					<h4 class="mb-2">Future Direction</h4>
-					<p>One problem was there was not a large range in some game scores (the y-axis scales different).  Immediately after the 
-					trial run, ththe target positions.</p> 
-					<p>The next stis was addressed by changing the scoring system to favour individuals who could keep their balance closer to
-					the centre of ep is to incorporate visual feedback training with functional electrical stimulation. Once done,
-					this rehabilitation tool would be tested with individuals with spinal cord injuries.</p>
+					<p>One problem was there was not a large range in some game scores (the y-axis scales different). Immediately after the trial run, ththe target positions.</p> 
+					<p>The next step was addressed by changing the scoring system to favour individuals who could keep their balance closer to	the centre of ep is to incorporate visual feedback training with functional electrical stimulation. Once done, this rehabilitation tool would be tested with individuals with spinal cord injuries.</p>
 					</div>
 				</div>
 			</div>
@@ -317,19 +363,15 @@ the vision and assist with clarifying the direction for future design iterations
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">The Blue Clock </h2>
 				</div>
-					<img src="./img/tilting alarm bed/render.jpg" class="img-fluid d-flex float-left mb-4 col-8"></img>
-					<p class="col-4 d-flex flex-wrap">Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed 
-	acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no 
-	longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>
-				
+					<img src="./img/tilting alarm bed/render.JPG" class="img-fluid d-flex float-left mb-4 col-8"></img>
+					<p class="col-4 d-flex flex-wrap">Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>		
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Proof of Concept Prototype</h2>
 				</div>
 						<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid float-left mb-4 col-7"></img>
-					<p class="col-5 d-flex align-items-center">Once designed, an initial prototype is built of popsicle sticks and glue.  This prototype allows us to visualize
-the vision and assist with clarifying the direction for future design iterations.  Shown is Matt Damon rolling out of bed in style. </p>
+					<p class="col-5 d-flex align-items-center">Once designed, an initial prototype is built of popsicle sticks and glue.  This prototype allows us to visualize the vision and assist with clarifying the direction for future design iterations.  Shown is Matt Damon rolling out of bed in style. </p>
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#biocar" role="button" data-slide="prev">
@@ -346,32 +388,47 @@ the vision and assist with clarifying the direction for future design iterations
 	<!-- Car Side Mirror -->
 	 <section class="portfolio bg-primary text-white text-center" id="car">
       <div class="container carousel slide" id="carcar" data-ride="carousel" data-interval="0">
+	  <ol class="carousel-indicators">
+		<li data-target="#carcar" data-slide-to="0" class="active"></li>
+		<li data-target="#carcar" data-slide-to="1"></li>
+		<li data-target="#carcar" data-slide-to="2"></li>
+		<li data-target="#carcar" data-slide-to="3"></li>
+		<li data-target="#carcar" data-slide-to="4"></li>
+		<li data-target="#carcar" data-slide-to="5"></li>
+	 </ol>
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-1">Vehicular Rear-View Camera System </h2>
 				<h3 calss="mx-auto mb-2">Looking forward to looking backwards </h3>
 				</div>
-				<p>Have you ever missed and your alarm and missed an important meeting, an exam, or a flight?  This common occurance
-		is an extremely frustrating scenario for those that have trouble hearing their alarm in the morning.</p>
+				<p>Vehicles come in all sorts of shapes and sizes.  There are an infinite number of ways you can categorize a car: luxury, sedan, van, truck, vintage.  Through countless design iterations over a century, while the rest of the vehicle has adapted to fit modern times, the wing mirror has not seen any development.  First, the wing mirror is a major safety hazard.  It creates blindspot zones that has made it necessary for drivers to look away from where they are driving to check their blindspots.  Second, the wing mirror is the only part of the vehicle that extrudes out of the body of the car.  Although relatively small, this obtrusion causes up to 7% of total vehicle drag during driving.  Automakers are pushing to eliminate the legislation that requires vehicles to have wing mirrors, and this project shows a prototype of what the future  of wing mirror-less vehicles might look like.</p>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">The Blue Clock </h2>
+				<h2 class="mx-auto mb-3">Compact Rear-View Camera System</h2>
+				<img src="./img/vehicular rear view camera/parts.png" class="img-fluid"></img>
 				</div>
-					<img src="./img/tilting alarm bed/render.jpg" class="img-fluid d-flex float-left mb-4 col-8"></img>
-					<p class="col-4 d-flex flex-wrap">Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed 
-	acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no 
-	longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>
-				
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Proof of Concept Prototype</h2>
+				<h2 class="mx-auto mb-3">Aerodynamic Benefit</h2>
 				</div>
-						<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid float-left mb-4 col-7"></img>
-					<p class="col-5 d-flex align-items-center">Once designed, an initial prototype is built of popsicle sticks and glue.  This prototype allows us to visualize
-the vision and assist with elucidating the direction for future design iterations.  Shown is Matt Damon rolling out of bed in style. </p>
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Safety Enhancement: Blindspot Elimination</h2>
+				</div>
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Safety Enhancement: Low Lighting Conditions</h2>
+				</div>
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Future Direction</h2>
+				</div>
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carcar" role="button" data-slide="prev">
@@ -400,8 +457,7 @@ the vision and assist with elucidating the direction for future design iteration
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Tilting Alarm Bed </h2>
 				</div>
-				<p>Have you ever missed and your alarm and missed an important meeting, an exam, or a flight?  This common occurance
-		is an extremely frustrating scenario for those that have trouble hearing their alarm in the morning.</p>
+				<p>Have you ever missed and your alarm and missed an important meeting, an exam, or a flight?  This common occurance is an extremely frustrating scenario for those that have trouble hearing their alarm in the morning.</p>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
@@ -409,12 +465,10 @@ the vision and assist with elucidating the direction for future design iteration
 				</div>
 					<div class="row">
 						<div class="col-8">
-						<img src="./img/tilting alarm bed/render.jpg" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/render.JPG" class="img-fluid"></img>
 						</div>
 						<div class="col-4">
-						<p>Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed 
-		acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no 
-		longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>
+						<p>Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.</p>
 						</div>
 					</div>
 			</div>
@@ -424,9 +478,7 @@ the vision and assist with elucidating the direction for future design iteration
 				</div>
 				<div class="d-flex flex-row align-items-center">
 					<div class="flex-column mb-4 col-6">
-						<p class="d-flex align-items-center">Once designed, an initial prototype is built of Popsicle sticks and glue.  This prototype allows us to visualize
-	the vision and assist with elucidating the direction for future design iterations.  For instance, pinch points become more visible 
-	and the drop height and drop speed visualized help with understanding the mechanics of rolling out of bed.  Shown is Matt Damon rolling out of bed in style. </p>
+						<p class="d-flex align-items-center">Once designed, an initial prototype is built of Popsicle sticks and glue.  This prototype allows us to visualize the vision and assist with elucidating the direction for future design iterations.  For instance, pinch points become more visible and the drop height and drop speed visualized help with understanding the mechanics of rolling out of bed.  Shown is Matt Damon rolling out of bed in style. </p>
 					<img src="./img/tilting alarm bed/prototype1.jpg" class="img-fluid" style="height:15rem"></img>
 					</div>
 					<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid col-6 d-flex" style="height: 25rem"></img>
@@ -442,7 +494,7 @@ the vision and assist with elucidating the direction for future design iteration
 						<figcaption class="figure-caption">All disassembled parts and sub-assemblies of the bed.</figcaption>
 					</figure>
 					<figure class="figure col-2">
-						<img src="./img/tilting alarm bed/small2.png" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/small2.PNG" class="img-fluid"></img>
 						<figcaption class="figure-caption">Latch assembly for actuation of the bed.</figcaption>
 					</figure>
 					<figure class="figure col-2">
@@ -467,9 +519,7 @@ the vision and assist with elucidating the direction for future design iteration
 							<img src="./img/tilting alarm bed/final.jpg" class="img-fluid"></img>
 							</div>
 						</div>
-						<p> Here is the bed in all its beautiful glory. 
-<strong>Future vision: </strong> Further persistence of getting this product to market would be met with too many lawsuits.  
-It was a fun project though :). Brought to you by The Blue Clock, University of Waterloo. 
+						<p> Here is the bed in action. Instead of the traditional approach of waking up through sound, this bed uses the sense of (an excessively aggressive) touch.  Although promising in its effectiveness, further persistence of getting this product to market would be met with too many lawsuits. 
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#bedcar" role="button" data-slide="prev">
@@ -488,22 +538,17 @@ It was a fun project though :). Brought to you by The Blue Clock, University of 
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
-              <i class="icon-social-facebook"></i>
+            <a class="social-link rounded-circle text-white mr-3" href="mailto:kth.chow@utoronto.ca">
+              <i class="fas fa-envelope"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
-              <i class="icon-social-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="#">
-              <i class="icon-social-github"></i>
+            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/kthchow/">
+              <i class="fas fa-linkedin"></i>
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+        <p class="text-muted small mb-0">I currently refuse to comply with American spelling.</p>
       </div>
     </footer>
 
