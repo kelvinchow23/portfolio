@@ -25,6 +25,7 @@ body {
 
 .content-section-heading h2 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .content-section-heading h3 {
@@ -222,7 +223,7 @@ h6 {
 }
 
 .portfolio {
-	min-height: 30rem;
+	min-height: 35rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
@@ -271,6 +272,7 @@ a:hover, a:focus, a:active {
 .carousel-inner {
 	margin: auto;
 	height: 35rem;
+	text-align: justify;
 }
 
 .carousel-item {
