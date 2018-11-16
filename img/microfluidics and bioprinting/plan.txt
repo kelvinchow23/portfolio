@@ -13,5 +13,6 @@ Slide 2&3: Molecular Gastronomy pasta hydrogels
 Slide 4: Hong Kong caviar, closeup droplet formation, large device view, end product
 
 Slide 5: Bioprinting labview program, setup
+	image of setup and program and description
 
 
