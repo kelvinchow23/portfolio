@@ -1,9 +1,0 @@
-Slide 1: Intro
-
-Slide 2: Initial Concept and drawback
-
-Slide 3: Modified Design
-
-Slide 4: Stuff from paper
-
-Slide 5: Conclusion and Future Work

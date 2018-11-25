@@ -8,8 +8,10 @@
 
     <title>Kelvin's Portfolio</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +44,7 @@
           <a class="js-scroll-trigger" href="#balance">Balance Rehab Game</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#bioprinting">Bioprinting & Microfluidics</a>
+          <a class="js-scroll-trigger" href="#bioprinting">Microfluidics</a>
         </li>
 		<li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#car">Car Side Camera</a>
@@ -83,7 +85,7 @@
 		  	<a class="js-scroll-trigger" href="#bioprinting">
 			<img src="./img/other/i-microfluidics.png" class="img-fluid"></img>
             <h4>
-              <strong>Bioprinting & Microfluidics</strong>
+              <strong>Microfluidics</strong>
             </h4>
 			</a>
           </div>
@@ -115,9 +117,7 @@
         <div class="row">
 		  <div class="col toronto align-self-center"></div>
           <div class="col-8">
-            <p class="lead mb-2">My name is Kelvin and I am a prospective PhD student. 
-			Currently, I am a masters student at the University of Toronto pursuing research 
-			in the fields of organ-on-a-chip, bioprinting, and tissue engineering.  I completed my bachelors at the University of Waterloo in Mechanical Engineering.  Please feel free to browse through my collection of engineering-focused projects I have worked on over the last 3 years. I have indicated and described on some slides the work that I do not take credit for.</p>
+            <p class="lead mb-2">My name is Kelvin and I am a prospective PhD student. Currently, I am a masters student at the University of Toronto pursuing research in the fields of organ-on-a-chip, bioprinting, and tissue engineering. I completed my bachelors at the University of Waterloo in Mechanical Engineering.  Please feel free to browse through my collection of engineering-focused projects I have worked on over the last 3 years. I have indicated where necessary the work I take zero credit for.</p>
           </div>
 		  <div class="col waterloo align-self-center"></div>
         </div>
@@ -137,18 +137,17 @@
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-2">Reconfigurable Display </h2>
+				<h2>Reconfigurable Display </h2>
 				<h3 class="mb-2">Can you fit a laptop into your pocket? </h3>
 				</div>
 					<p>Moore's law drives technological advancement to make electronics smaller, true for most cases.  Yet, the cellphone, arguably the most pervasive electronic device, defies this trend.  Why is this?  One reason is the trade-off between convenience and practicality.  People would rather carry around a lightweight phone in their pocket.  Most people also want large electronic displays, which offer more utility.  The electronic display is the geometric constraint of cell phones, tablets, and laptops.  A device with a reconfigurable display would maximize the convenience and utility benefit of electronic devices.</p>
-					<p>The general approach in this field is to place rigid LEDs on soft flexible, stretchable substrates.  The key issue with this approach is once the substrate is stretched, the pixel density decreases, reducing the image quality. Also, this approach is dependent on the substrate's mechanical properties, which diminish when stretched.  This project proposes a different approach to this problem. </p>
+					<p>The general approach in this research field is to place rigid LEDs on soft flexible, stretchable substrates (see figure below).  The key issue with this approach is once the substrate is stretched, the pixel density decreases, reducing the image quality. Also, this approach is dependent on the substrate's mechanical properties, which diminish when stretched.  This project proposes a different approach to this problem. </p>
 				<div class="row">	
-					<div class="col-1"></div>f
-					<figure class="figure col-4 align-self-center">
-						<img src="./img/reconfigurable display/intro.PNG" class="img-fluid"></img>
+					<figure class="figure col-5">
+						<img src="./img/reconfigurable display/intro.png" class="img-fluid"></img>
 					</figure>
-					<div class="col-6">
-						<img src="./img/reconfigurable display/phone size-2.png" class="img-fluid"></img>
+					<div class="col-7">
+						<img src="./img/reconfigurable display/phone size.png" class="img-fluid"></img>
 					</div>
 				</div>			
 			</div>
@@ -157,14 +156,14 @@
 				<h2 class="mx-auto mb-3">The Initial Design </h2>
 				</div>
 					<p>The first design proposed a solution where 16 individual square "islands", each representing an LED, would be constrained to move uniformly.  Each island was constrained to move linearly on a track and connected to other islands via guide arms.  By moving one island, all islands would move simultaneously.</p>
-					<p> Two major problems of this design forced a redesign.  First, this design required extra space in order to work, defeating the purpose of having a compact design.  Second, this design shares the same flaw as the flexible substrate design, where there are gaps in between islands, reducing pixel density when stretched. </p>
+					<p> Two major problems of this design forced a redesign.  First, this design required extra space in order to work, defeating the purpose of having a compact design.  Second, this design shared the same flaw as the flexible substrate design. Gaps are created when the islands are in "stretched" state, reducing the pixel density. </p>
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-6">
-					<img src="./img/reconfigurable display/motor stretch.gif" class="img-fluid"></img>
+					<img src="./img/reconfigurable display/motor stretch.gif" class="img-fluid rounded"></img>
 					</div>
 					<div class="col-4">
-					<img src="./img/reconfigurable display/remove2.PNG" class="img-fluid"></img>
+					<img src="./img/reconfigurable display/remove2.png" class="img-fluid"></img>
 					</div>
 				</div>
 				
@@ -175,23 +174,23 @@
 				</div>
 				<div class="row mb-3">
 					<figure class="figure col-4 text-center">
-						<img src="./img/reconfigurable display/blocks.png" class="img-fluid" style="height:12rem"></img>
-						<figcaption class="figure-caption text-justify" style="color:white; line-height:1rem">First, each island needed to be constrained inside a compact footprint.  This is visualized by the 16 islands on four different levels in its collapsed state.</figcaption>
+						<img src="./img/reconfigurable display/blocks.png" class="img-fluid mb-2" style="height:12rem"></img>
+						<figcaption class="figure-caption text-justify" style="color:white">First, each island needed to be constrained inside a compact footprint.  This is initially visualized by having 16 islands on four different height levels in its collapsed state.</figcaption>
 					</figure>
 					<figure class="figure col-5 text-center">
-						<img src="./img/reconfigurable display/link.PNG" class="img-fluid" style="height:12rem"></img>
-						<figcaption class="figure-caption text-justify" style="color:white; line-height:1rem">Upon expansions, the islands on the three bottom levels need to rise to the top level.  This is done by linking each island to another island on another level through rigid beams.</figcaption>
+						<img src="./img/reconfigurable display/link.PNG" class="img-fluid mb-2"></img>
+						<figcaption class="figure-caption text-justify" style="color:white">Upon expansion, the bottom islands need to rise to the top level.  This is done by linking islands on different levels through rigid beams.  The design is constrained to allow 1 DOF between 2 coupled islands. </figcaption>
 					</figure>
 					<figure class="figure col-3 text-center">
-						<img src="./img/reconfigurable display/hoberman.gif" class="img-fluid" style="height:12rem"></img>
-						<figcaption class="figure-caption text-justify" style="color:white; line-height:1rem">The inspiration for this design came from the Hoberman sphere, a children's toy.[reference]</figcaption>
+						<img src="./img/reconfigurable display/hoberman.gif" class="img-fluid rounded-circle mb-2" style="height:12rem"></img>
+						<figcaption class="figure-caption text-justify" style="color:white">The inspiration for this design came from the Hoberman sphere, a children's toy.</figcaption>
 					</figure>
 				</div>
 				<div class="row">
 					<div class="col-8">
 						<img src="./img/reconfigurable display/solidworks stretch.png" class="img-fluid"></img>					
 					</div>
-					<p  class="col-4 text-justify" style="line-height:1.1rem; font-size:90%">The complete assembly of the prototype is shown on the left.  From left to right, the figure shows a transition from collapsed to expanded state.  Depending on which direction the force is applied, the display prototype can either be stretched from its collapsed 3x3 state to either a 5x5 or a 3x5 shape (shown in a later slide).  Different aspect ratios are beneficial for different applications.</p>
+					<p  class="col-4 text-justify align-self-center" style="font-size:90%">The complete assembly of the prototype is shown on the left.  From left to right, the figure shows a transition from collapsed to expanded state.  Depending on which direction the force is applied, the display prototype can either be stretched from its collapsed 3x3 state to either a 5x5 or a 3x5 shape (shown in a later slide).  Different aspect ratios are beneficial for different applications.</p>
 				</div>	
 			</div>
 			<div class="carousel-item">		
@@ -200,19 +199,19 @@
 				</div>
 				<div class="row mb-3">
 					<div class="col-8">
-						<img src="./img/reconfigurable display/all parts.jpg" class="img-fluid"></img>					
+						<img src="./img/reconfigurable display/all parts.jpg" class="img-fluid rounded"></img>					
 					</div>
-					<p class="col-4">All parts are 3D printed (top-left).  The prototype is assembled and can be expanded or collapsed (bottom-left). LEDs are wired each level of LEDs are independently controlled (bottom-center). Each LED is placed on one island (bottom-right).</p>
+					<p class="col-4 align-self-center"> (a) After finishing the design, all the components are 3D-printed. (b) After assembly, the prototype has the ability to expand and collapse. (c) LEDs are wired so each level of LEDs can be independently controlled. (d) One LED is placed on every island.</p>
 				</div>
 				<div class="row">
 					<div class="col-6">
-						<img src="./img/reconfigurable display/expand2.gif" class="img-fluid"></img>					
+						<img src="./img/reconfigurable display/expand.gif" class="img-fluid rounded"></img>					
 					</div>
 					<div class="col-3">
-						<img src="./img/reconfigurable display/wiring.jpg" class="img-fluid"></img>					
+						<img src="./img/reconfigurable display/wiring.jpg" class="img-fluid rounded"></img>					
 					</div>
 					<div class="col-3">
-						<img src="./img/reconfigurable display/lights.jpg" class="img-fluid"></img>					
+						<img src="./img/reconfigurable display/lights.jpg" class="img-fluid rounded"></img>					
 					</div>
 				</div>
 			</div>
@@ -221,7 +220,7 @@
 				<h2 class="mx-auto mb-3">Bringing the Design into Reality</h2>
 				</div>
 				<div class="row">
-					<div class="col-3"><img src="./img/reconfigurable display/2x2-stretch.gif" class="img-fluid" style="height:28rem"></img></div>
+					<div class="col-3"><img src="./img/reconfigurable display/2x2-stretch.gif" class="img-fluid rounded" style="height:28rem"></img></div>
 					<div class="col-3"><img src="./img/reconfigurable display/scalable.png" class="img-fluid" style="height:28rem"></img></div>
 					<div class="col-6 text-center"><img src="./img/reconfigurable display/2x2-lights.png" class="img-fluid" style="height:12rem"></img>
 					<p class="text-justify">The figure on the left shows the expansion and collapsing of a 2x2 version of the reconfigurable display. The figure in the middle shows the scalability of the display using the current prototype manufacturing method of 3D printing.  The prototype's height can be scaled to under a centimetre.  The figure on the top right demonstrates the constant pixel density after expansion.  The green lights show the pixels on the original top layer and the red lights are from the bottom layers.  
@@ -256,21 +255,22 @@
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Balance Rehabilitation Game </h2>
+				<h2>Balance Rehabilitation Game </h2>
+				<h3 class="mb-2">Tagline</h3>
 				</div>
 				<p>Individuals suffering from spinal cord injuries (SCI) often have balance instability caused by a reduced neural control of lower-limbed muscles.  Rehabilitation tools have been demonstrated to be effective in repairing the disconnect between brain and body.  Two rehabilitation tools of interest are visual feedback training (VFT) and functional electrical stimulation (FES) therapy.  </p>
-				<div class="row text-center mb-3">
+				<div class="row text-center">
 					<div class="col-6">
-						<img src="./img/balance game/wii fit.PNG" class="img-fluid w-75"></img>
+						<img src="./img/balance game/wii fit.PNG" class="img-fluid" style="height:18rem"></img>
 					</div>
 					<div class="col-6">
-						<img src="./img/balance game/myndmove.jpg" class="img-fluid w-75"></img>
+						<img src="./img/balance game/myndmove.jpg" class="img-fluid rounded" style="height:18rem"></img>
 					</div>
 				</div>
 				<div class="row">
-					<p class="col-6">	Wii Fit is a commercial example of visual feedback training. Some of the training games and used to improve balance and strength training. [reference] </p>
+					<p class="col-6">	Wii Fit is a commercial example of visual feedback training. Some of the training games and used to improve balance and strength training.</p>
 					<p class="col-6">
-					MyndMove is a commercial example of functional electrical stimulation. Electrodes are placed on the body to activate certain muscle groups, producing functional movements. [reference]</p>
+					MyndMove is a commercial example of functional electrical stimulation. Electrodes are placed on the body to activate certain muscle groups to produce functional movements.</p>
 				</div>
 			</div>
 			<div class="carousel-item">		
@@ -284,14 +284,14 @@
 					<div class="col-4 align-self-center text-justify">
 					<p>We propose a balance rehabilitation tool that combines both visual feedback training with functional electrical stimulation therapy.  Our hypothesis is By combining an engaging training game with stimulation therapy, we hypothesize our balance training tool would amplify and accelerate the rehabilitation effects compared to single-modal approaches.  For more details, refer <u><a href="https://doi.org/10.17975/sfj-2017-016" style="color:black" target="_blank">here</a></u>.</p>
 					
-					<p>My focus on the project was creating the visual feedback training, which included designing and programming the training system, conducting preliminary trials, and analyzing trial data for system future-proofing.  Another lab member worked on the functional electrical stimulation, and the two parts of the project were merged at a later date. </p> 
+					<p>My focus on the project was creating the visual feedback training system, which included designing and programming the training system, conducting preliminary trials, and analyzing trial data for system future-proofing.  Another lab member worked on the functional electrical stimulation, and the two parts of the project were merged at a later date. </p> 
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Four Task-Oriented Games</h2>
-				<p> One training session includes 4 games played 3 times each.  The games are designed to emulate a collection of muscle strengthening exercises for balance rehabilitation. Each game displays a transient coloured dot on the screen, displaying the individual's centre of position on the force plate.</p>
+				<p> One training session includes 4 games played 3 times each.  The games are designed to emulate a collection of muscle strengthening exercises for balance rehabilitation. Each game displays a moving coloured dot on the screen, displaying the individual's centre of position on the force plate.</p>
 				</div>
 				<div class="row mb-3">
 					<div class="col-3">
@@ -305,7 +305,7 @@
 					</div>
 					<div class="col-3">
 						<p style="line-height:1rem;">
-						<strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appears and the objective is to move the red dot inside that target and hold it for 3 seconds.  Once successful, a new target appears in a different location. This game trains muscle reflexes by inducing constant shifting of body weight.</font></p>
+						<strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appears and the objective is to move the red dot inside that target and hold the position for 3 seconds.  Once successful, a new target appears in a different location. This game trains muscle reflexes by inducing constant shifting of body weight.</font></p>
 					</div>
 				</div>
 				<div class="row">
@@ -327,24 +327,24 @@
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Two Balance Assessments</h2>
-				<p>In addition to the games, a training session includes two balance assessments to track progress of balance improvement over multiple training sessions.  These assessments are standard tests that have a strong correlation to an individual's balance ability.</p>
+				<p>In addition to the games, the training session included two balance assessments to track progress of balance improvement over multiple training sessions.  These assessments were standard tests that have a strong correlation to an individual's balance ability.</p>
 				</div>
 				<div class="row mb-2">
 					<div class="col-6 text-center">					
-						<img src="./img/balance game/static.png" class="img-fluid" style="width:31rem"></img>
+						<img src="./img/balance game/static.png" class="img-fluid" style="width:30rem"></img>
 					</div>
 					<div class="col-6">
 						<h4>Static Balance Assessment</h4>
-						<p>An individual is asked to stand on the force plate with their eyes closed as still as possible for 100 seconds. During this time, a centre of position (COP) time series will be recorded to track the involuntary sway of the individual.  For these studies, three performance indicators are taken: Root means squared in the (1) Anterior-posterior (front to back) and (2) Medial-Lateral (side to side) direction, and (3) 95% confidence ellipse of the time series.</p>
+						<p>An individual is asked to stand on the force plate with their eyes closed as still as possible for 100 seconds. During this time, a centre of position (COP) time series will record and track the involuntary sway of the individual.  For these studies, three performance indicators are taken: root means squared in the (1) anterior-posterior (front to back) and (2) medial-lateral (side to side) direction, and (3) 95% confidence ellipse of the data.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-6 text-center">
-						<img src="./img/balance game/dynamic.png" class="img-fluid" style="width:31.4rem"></img>
+						<img src="./img/balance game/dynamic.png" class="img-fluid" style="width:30rem"></img>
 					</div>
 					<div class="col-6">
 						<h4>Dynamic Balance Assessment</h4>
-						<p>An individual is prompted by our GUI	 to perform the "star reaching task", where we ask the individual to lean as far as possible in the indicated direction.  After getting the individual to reach in all 8 directions, the 8 points are plotted and the area inside these points are calculated to give our index to measure dynamic balance.  This performance indicator is called the dynamic balance area.</p>
+						<p>An individual is prompted by our GUI	 to perform the "star reaching task" where we ask the individual to lean as far as possible without losing balance in the indicated direction.  After the individual reached in all 8 directions, the points are plotted and and joined to create an octagon.  The area of the octagon is the performance indicator for dynamic balance, which is called the dynamic balance area.</p>
 					</div>
 				</div>
 			</div>
@@ -359,8 +359,8 @@
 					<div class="col-6">
 					<p class="mb-4">Seven able-bodied individuals ran through the training session to test the effectiveness of the system. Three out of four games (y-axis) showed bivariate correlation between balance ability (x-axis), indicating the games were appropriately designed.</p> 
 					<h4 class="mb-2">Future Direction</h4>
-					<p>One problem was there was not a large range in some game scores (the y-axis ranges for the ellipse and colour matching games are lower), making it difficult to distinguish an individual's balance ability with game scores. Immediately after the trial run, this was addressed by changing the scoring system to favour individuals who could keep their balance position closer to the centre of the game targets.</p> 
-					<p>The next step is to conduct another trial run on able-bodied participants, this time incorporating functional electrical stimulation with visual feedback training.  Once done and further system optimizations are carried out, the system will be used for clinical trials on individuals with spinal cord injuries to determine the effectiveness of this rehabilitation tool.</p>
+					<p>One problem was the clustering of game scores for some games (the y-axis ranges for the ellipse and colour matching games are lower). This made it difficult to distinguish an individual's balance ability with game scores. Immediately after the trial run, this problem was addressed by changing the scoring system to favour individuals who could keep their balance position closer to the centre of the game targets.</p> 
+					<p>The next step would be to conduct another trial run on able-bodied participants, this time incorporating functional electrical stimulation with visual feedback training.  Once done and further system optimizations are performed, the system would be used for clinical trials on individuals with spinal cord injuries to determine the effectiveness of this rehabilitation tool.</p>
 					</div>
 				</div>
 			</div>
@@ -379,26 +379,132 @@
 		    <!-- Bioprinting/Microfluidics -->
 	 <section class="portfolio bg-secondary text-white text-center" id="bioprinting">
       <div class="container carousel slide" id="biocar" data-ride="carousel" data-interval="0">
+	  <ol class="carousel-indicators">
+		<li data-target="#biocar" data-slide-to="0" class="active"></li>
+		<li data-target="#biocar" data-slide-to="1"></li>
+		<li data-target="#biocar" data-slide-to="2"></li>
+		<li data-target="#biocar" data-slide-to="3"></li>
+		<li data-target="#biocar" data-slide-to="4"></li>
+	  </ol>
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Bioprinting and Microfluidics </h2>
+				<h2 class="mx-auto mb-1">Microfluidics </h2>
+				<h3 class="mb-3">Tagline</h3>
 				</div>
-				<p>Text here.</p>
+				<div class="row text-center">
+					<div class="col-7 align-self-center text-justify">
+					<p>Microfluidics is the manipulation of fluids at low volumes in devices with micron-level dimensions. This field of study has become increasingly popular, especially in biological applications.  In general, the advantages of microfluidics includes its quick, cheap, and simple manufacturing process, the ability to scale designs for high-throughput studies, and its increased measurement accuracy due to the increased area-to-volume ratio. Related to biology, microfluidic devices are typically bio-compatible, and the small volumes are advantageous since many bio-samples are expensive and often difficult to extract at large quantities. </p>
+					<p>Bioprinting is the technology intertwining 3D printing and biology. Bio-printers range in capabilities, with some focusing on biocompatible materials that can be used for implantation while others deposit bio-inks containing living cells.  Bio-printing is a promising technology with its potential applications in personalized healthcare.</p>
+					<p>At the Guenther lab at the University of Toronto, one research focus is developing microfluidic bioprinting technologies for tissue engineering.  As most of my work is currently in progress and unpublished, it will not be disclosed in this portfolio. I will instead highlight some smaller microfluidic projects and its potential applications in another field.  A couple of the Guenther Lab microfluidic bio-printing technologies are shown to the right.</p>
+					</div>
+					<div class="col-5">
+						<a href="https://doi.org/10.1002/adma.201201442" target="_blank"><img src="./img/microfluidics and bioprinting/intro1.png" class="img-fluid" style="width:90%"></img></a>
+						<a href="https://pubs.rsc.org/en/content/articlehtml/2018/lc/c7lc01236e" target="_blank"><img src="./img/microfluidics and bioprinting/intro2.gif" class="img-fluid" style="width:90%"></img></a>
+					</div>
+				</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Microfluidics</h2>
+				<h2 class="mx-auto mb-3">Molecular Gastronomy with Microfluidics</h2>
 				</div>
-					<img src="./img/tilting alarm bed/render.JPG" class="img-fluid d-flex float-left mb-4 col-8"></img>
-					<p class="col-4 d-flex flex-wrap">Text here.</p>		
+					<p>Molecular gastronomy is where food meets science to flip traditional culinary practices.  With the same ingredients, the perception of taste can be altered using molecular gastronomy.  Here, we focus on using microfluidics to generate microscale edibles. (Please be prepared to exercise some level of imagination.)</p>
+					<p>3 different manufacturing techniques to create 3 different microfluidic devices to create 3 different dishes will be described. The manufacturing process flow to create the devices are similar. All 3 devices are flow-focusing devices with two solutions: sodium alginate and calcium chloride (CaCl<sub>2</sub>). The gelation of alginate depends on the ionic reaction between sodium alginate and calcium ions, which creates edible, tastless calcium alginate gels. All devices contain a junction where alginate-filled channel is sandwiched in between two CaCl<sub>2</sub>-filled channels.  By controlling the flowrate ratios, the dimensions of the produced gels can be tuned.
+					</p>
+					<div class="row">
+						<div class="col-7">
+						<h5>1) Mould Design</h5>
+						<img src="./img/microfluidics and bioprinting/device design.png" class="img-fluid" style="height:9rem" align="left"></img>
+						<p>The first step is design.  A reusable mould is typically involved to make multiple devices, so the design is often of the mould instead of the final device.  Here, a 3-layer microfluidic device is shown.  The top and bottom layers are hot embossed, while the middle layer contains lasercut through holes to connect between layers.  The black holes are through holes, the green patterns are alginate channels, and the light blue patterns are CaCl<sub>2</sub> channels.  The centre through holes on the top and bottom layer are for the fluidic inlets.  Fluid flows from the centre of the device and exits at the 16 outlets at the perimeter.</p>
+						</div>
+						<div class="col-5 text-center">
+						<h5>2) Mould Making</h5>
+							<img src="./img/microfluidics and bioprinting/mould making.png" class="img-fluid rounded"></img>
+							<p class="text-justify">Two moulds are required to create the top and bottom layers. a) A PMMA master is micro-milled. (b) An epoxy-based resin is poured onto the master and fills in the cavities. (c) After setting, the stiff elastomeric epoxy is removed from the master and the epoxy mould is created.</p>
+						</div>
+					</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Bioprinting</h2>
+				<h2 class="mx-auto mb-3">Falooda!</h2>
 				</div>
-					<p>Text here.</p>
+					<div class="row">
+						<div class="col-5" style="border-right: 2px solid #ccc">
+							<h5>3) Pattern Transfer </h5>
+							<img src="./img/microfluidics and bioprinting/embosser.png" class="img-fluid rounded"></img>
+							<p>The hot embossing process is shown in the schematic, where a mould is pressed against a PMMA slab. The right image shows the resulting embossed PMMA layer.
+							</p>
+							<h5>4) Assembly </h5>
+							<img src="./img/microfluidics and bioprinting/assembled.png" class="img-fluid rounded" align="left" style="height:9rem"></img>
+							<p>After two PMMA layers are embossed and the middle PMMA layer is lasercut, the three layers are bonded together via solvent bonding.  Pipette tips are epoxied around the two inlet holes, used to connect to external tubing. </p>	
+						</div>
+						<div class="col-7">
+							<h5> 5) Fiber Formation </h5>
+							<div class="row">
+								<div class="col-6">
+									<img src="./img/microfluidics and bioprinting/8-setup.png" class="img-fluid rounded"></img>
+								</div>
+								<p class="col-6">Alginate and CaCl<sub>2</sub> are loaded into 2 syringes mounted on a syringe pump.  Tubing is connected to the device, which is placed in a water bath for fiber collection.</p>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<img src="./img/microfluidics and bioprinting/9-fibers.jpeg" class="img-fluid rounded"></img>
+								</div>
+								<p class="col-6">Fibers are pulled out of the bath for examination.  Fibers of different diameters can be extruded based on the inlet flowrates.</p>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<img src="./img/microfluidics and bioprinting/10-dessert.png" class="img-fluid rounded" style="height:10rem"></img>
+								</div>
+								<p class="col-6">Here is our dessert on some ice cream.  The dish that was attempted was an Indian dessert, kulfi falooda. For sanitary reasons, the fibers were extruded differently for consumption.</p>
+							</div>
+						</div>						
+					</div>
 			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Bucatini!</h2>
+				</div>
+					<p>Bucatini is a tube-shaped pasta made from an extrusion process.  With a PDMS microfluidic device, we can produce candied micro-bucatini (alginate-based tubes with sub-millimeter diameters). <a href="https://patents.google.com/patent/US20160068385A1/en" style="color:white" target="_blank"><u>Refer here</u></a> for details on the microfluidic device. Apart from shrinking food to alter taste perception, a dish can be elevated through presentation. Through the controlled deposition of our bucatini extrusion, we can impress with presentation, psychologically enhancing the perception of taste.</p>
+					<div class="row text-center">
+						<div class="col-6">
+							<img src="./img/microfluidics and bioprinting/printer.png" class="img-fluid rounded" style="height:17rem"></img>
+							<p class="text-justify">Our bucatini maker consists of three syringe pumps (1) that are connected to a microfluidic device (2). The bucatini extrudes from a glass tube (3) and onto a plate fixed to a moving XY stage (4). All components are controlled through the custom GUI (5).</p>
+						</div>
+						<div class="col-6">
+							<div class="row no-gutters">
+								<div class="col-6">
+									<img src="./img/microfluidics and bioprinting/spiral.gif" class="img-fluid rounded"></img>
+								</div>
+								<div class="col-6">
+									<img src="./img/microfluidics and bioprinting/spiral.jpg" class="img-fluid rounded-circle"></img>
+								</div>	
+							</div>								
+							<p class="text-justify">Here, we show the ability to deposit bucatini in a spiral pattern.  You will have to trust me that these are indeed tubes.</p>
+						</div>
+					</div>
+			</div>
+			<div class="carousel-item">		
+				<div class="content-section-heading">
+				<h2 class="mx-auto mb-3">Caviar!</h2>
+				</div>
+					<p>Spherification is a commonly used technique in molecular gastronomy to create solid spherical gels.  Using a flow-focusing microfluidic device similar to the falooda maker, oil and alginate emulsions can be formed to make alginate droplets, which can then be later gelled in a bath of calcium chloride.</p>
+					<div class="row text-center">
+						<div class="col-4">
+							<img src="./img/microfluidics and bioprinting/5 layers-flower.jpg" class="img-fluid rounded-circle" style="height:12rem"></img>
+							<p class="text-justify">This device is a five-layer lasercut PMMA device with 5 flow-focusing junctions.  All patterns are cut all the way through.  Most flow focusing junctions look similar because the physics of droplet breakup is favourable.  Instead of altering the junction, the design focused on seamlessly integrating the junction in a more aesthetic design.  The flower in the design is a stylized version of the Bauhinia blakeana, featured on the flag and emblem of Hong Kong. </p>
+						</div>
+						<div class="col-4">
+							<img src="./img/microfluidics and bioprinting/flower.jpg" class="img-fluid rounded" style="height:12rem"></img>
+							<p>This is the device after bonding.  The inlets are at the top of the device and the outlet is at the bottom.</p>
+							<p>Closeup gif of droplet formation.</p>
+						</div>
+						<div class	="col-4">
+							<img src="./img/microfluidics and bioprinting/printer.jpg" class="img-fluid rounded"></img>
+							<p>bunch of caviar.</p>
+						</div>
+					</div>
+			</div>	
 		</div>
 		<a class="carousel-control-prev" href="#biocar" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon left" aria-hidden="true"></span>
@@ -425,10 +531,12 @@
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-1">Vehicular Rear-View Camera System </h2>
-				<h3 class="mx-auto mb-2">Looking forward to looking backwards </h3>
+				<h2>Vehicular Rear-View Camera System </h2>
+				<h3 class="mb-4">Looking forward to looking backwards </h3>
 				</div>
-				<p class="mb-4">Vehicles come in all sorts of shapes and sizes.  There are an infinite number of ways you can categorize a car: luxury, sedan, van, truck, vintage.  Through countless design iterations over a century, while the rest of the vehicle has adapted to fit modern times, the wing mirror has not seen any development.  First, the wing mirror is a major safety hazard.  It creates blindspot zones that has made it necessary for drivers to look away from where they are driving to check their blindspots.  Second, the wing mirror is the only part of the vehicle that extrudes out of the body of the car.  Although relatively small, this obtrusion causes up to 7% of total vehicle drag during driving.  Automakers are pushing to eliminate the legislation that requires vehicles to have anachronistic wing mirrors, and this project displays a prototype of what the future  of wing mirror-less vehicles might look like.</p>
+				<p>Vehicles come in all sorts of shapes and sizes from luxury cars to common sedans, from hybrids to vintage cars, or from trucks to Smart cars. While the rest of the vehicle has morphed to fit modern times, the wing mirror design has stagnated and looks more or less the same on most vehicles (see vehicles below).  Over time, there have been incremental design changes to the side mirror and a drastic overhaul is necessary since the wing mirror is a major design flaw.</p>  
+				<p>First, the wing mirror is a safety hazard.  It creates blindspot zones, which has made it standard procedure for drivers to keep their head on a 180° swivel to perform blindspot checks before changing lanes. This flaw has existed for over a century and has never been fully addressed.  At fast speeds, fractions of a a second can be the difference between life or death. The safest option is for drivers to always keep their eyes on the road in front of them.  Second, the wing mirror is the only part of the vehicle that unexpectedly extrudes out from the body of the car.  Although relatively small, this obtrusion can cause up to 7% of total vehicle drag during driving.  </p>
+				<p class="mb-5">Automakers are pushing to eliminate the law requiring vehicles to have these anachronistic wing mirrors. This project previews the future of wing mirror-less vehicles.</p>
 				<img src="./img/vehicular rear view camera/cars.png" class="img-fluid mb-3"></img>
 			</div>
 			<div class="carousel-item">		
@@ -438,7 +546,7 @@
 				<h3>Inner Components</h3>
 				<div class="row mb-2">
 					<div class="col-7"><img src="./img/vehicular rear view camera/inner.png" class="img-fluid"></img></div>
-					<p class="col-5">Due to the scope of the project, the system was designed around an off-the-shelf Raspberry Pi camera board, serving as the geometric constraint for our module. To not further increase the size of our system, a custom PCB was fabricated and placed over the camera board.  The PCB includes high power IR LEDs for night time viewing, heater connections for de-icing,  a temperature sensor, and an ambient light sensor.</p>
+					<p class="col-5">Due to the scope of the project, the system was designed around an off-the-shelf Raspberry Pi camera board, serving as the geometric constraint for our module. To not further increase the size of our system, a custom PCB was fabricated and placed over the camera board.  The PCB includes high power infrared (IR) LEDs for night time viewing, heater connections for de-icing, a temperature sensor, and an ambient light sensor.</p>
 				</div>
 				<h3>Outer Housing</h3>
 				<div class="row">
@@ -451,40 +559,52 @@
 				<h2 class="mx-auto mb-3">Aerodynamic Benefit</h2>
 				</div>
 				<img src="./img/vehicular rear view camera/housing.png" class="img-fluid mb-3"></img>
-				<p>Here is a size comparison between a typical vehicular wing mirror and our camera system.  After running a simulation for a standard highway driving condition, our camera system reduced the drag by 99.5%. </p>
+				<p>Here is a size comparison between a typical vehicular wing mirror and our camera system.  After running a simulation for a standard highway driving condition, our camera system reduced the drag by 99.8%. </p>
 				<p><i>*I do not take credit for the housing design and optimization or the FEM simulations to verify the drag reduction.</i></p>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Safety Enhancement: Blindspot Elimination</h2>
+				<h2 class="mx-auto mb-3">Safety Enhancement: Blindspot Zone Elimination</h2>
 				</div>
 				<div class="row">
 					<div class="col-8">
-						<img src="./img/vehicular rear view camera/blindspot.gif" class="img-fluid" style="height:27rem"></img>
+						<img src="./img/vehicular rear view camera/blindspot1.gif" class="img-fluid rounded" style="height:27rem"></img>
 					</div>
-					<div class="col-4">
-						<img src="./img/vehicular rear view camera/blindspot.png" class="img-fluid mb-2"></img>
-						<p>On the left, a car is passing another vehicle.  The large frame is the camera view, which shows the passed vehicle a few seconds before it appears in the smaller frame (side mirror view). A schematic is shown in the top-left figure, showing the elimination of the blindspot of vehicles in the adjacent lane. Once a vehicle in the adjacent lane disappears from the camera view, it will enter the peripheral view.
-					</div>
+					<div class="col-4 text-center">
+						<img src="./img/vehicular rear view camera/blindspot2.gif" class="img-fluid mb-1 rounded" style="width:90%"></img>
+						<p class="text-justify">On the left, the camera (large frame) and side mirror (small frame) views show our car being passed by another car.  A schematic is shown on the top-right.  At first, the car is in both the camera and side mirror view.  When the car leaves the side mirror view, it enters the normal blindspot of our vehicle.  Yet, in our camera view, the passing car is still in frame and only leaves the frame when the car has fully overtaken our vehicle.  Thus, our camera eliminates the blindspot of cars in the adjacent lane.</p>
+						</div>
 				</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-5">Safety Enhancement: Low Lighting Conditions</h2>
-				<div class="row mb-4">
+				<h2 class="mx-auto mb-3">Safety Enhancement: Low Lighting Conditions</h2>
+				<div class="row mb-3">
 					<div class="col-6">	
-						<img src="./img/vehicular rear view camera/night w led.gif" class="img-fluid w-100"></img>
+						<img src="./img/vehicular rear view camera/night w led.gif" class="img-fluid w-100 rounded"></img>
 					</div>
 					<div class="col-6">	
-						<img src="./img/vehicular rear view camera/night no led.gif" class="img-fluid w-100"></img>
+						<img src="./img/vehicular rear view camera/night no led.gif" class="img-fluid w-100 rounded"></img>
 					</div>
 				</div>
-					<p>Comparison of our camera system with IR LEDs turned on and off driving through the same highway section with very few streetlights.  With the LEDs turned on, the lane markings and much of the road is clearly visible.  For comparison to what a side mirror looks like, it would be pitch black.  This camera system allows us to see better than human vision, and not reliant on another vehicle's headlights for rear visibility.  This also allows us to see potential moose, bears, zebras, kangaroos, or camels that sneak up on us.  As far as I know, they don't have headlights.</p>
+					<p>Here is a comparison of our camera operating at night through the same highway section.  The left is our camera with the infrared LED turned on, and the right is the camera with the light off.  The right view is similar to the view of the side mirror.  It is clear from these videos that the IR LED improves visibility at night.  When the car enters the section without streetlights (or any other external light), the IR LED allows the camera to pick up the lane markings on the road.  In comparison, the side mirror would have shown a pitch black view, demonstrating how dependent drivers currently are on external sources of light. This camera module allows the driver see potential vehicles with their headlights off (or moose, bears, zebras, kangaroos, or camels) that sneak up on us.</p>
 				</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-3">Future Direction</h2>
+				<h2 class="mx-auto mb-5">Demo Day</h2>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<img src="./img/vehicular rear view camera/car-camera.png" class="img-fluid rounded"></img>
+					</div>
+					<div class="col-6">
+					<p>This project was for a fourth-year undergraduate capstone project, where we displayed the potential advantages of a camera-based rear view system to the University of Waterloo engineering community.  For demo day, we showcased an interactive experience of our camera system on our supervisor's Porsche, demonstrating the safety benefits of our system.  With the monitor placed in front of the driver, we demonstrated a driving experience without having to tilt your head to check blindspots.</p>
+					<p> Due to the limitations of time and money, the project was narrowed down to a manageable scope, demonstrating a few key concepts. Ideally, we would have put an emphasis on seamlessly integrating the monitors into the vehicle's dashboard to improve the driving experience.  Another emphasis that was briefly covered was the integration of safety features using object detection. There are numerous other ways in which technology can be used to improve our driving experience, so why not use it?</p> 
+					</div>
+					<div class="col-3">
+						<img src="./img/vehicular rear view camera/car-monitor.jpg" class="img-fluid rounded"></img>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -512,11 +632,11 @@
 		<div class="carousel-inner w-100">
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
-				<h2 class="mx-auto mb-1">Alarm Clock Bed </h2>
-				<h3 class="mx-auto mb-2">Giving you that morning boost</h3>
+				<h2>Alarm Clock Bed </h2>
+				<h3 class="mb-2">For those mornings where you need a little push</h3>
 				</div>
 				<p>Have you ever slept through your alarm and missed an important meeting or exam? Are you the type of person that hits the snooze button 25 times every morning? Do you typically lie in bed in a depressing state of Weltschmerz, requiring all the will and strength in your mind and body to drag yourself out of bed?  We've all been there.  Mornings are the worst and traditional alarms clocks just don't cut it.  This collage of memes evokes society's frustration with this common problem.</p>
-			<img src="./img/tilting alarm bed/collage.jpg" class="img-fluid"></img>
+			<img src="./img/tilting alarm bed/collage.jpg" class="img-fluid rounded"></img>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
@@ -524,7 +644,7 @@
 				</div>
 					<div class="row">
 						<div class="col-8">
-						<img src="./img/tilting alarm bed/render.JPG" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/render.JPG" class="img-fluid rounded"></img>
 						</div>
 						<div class="col-4 align-self-center">
 						<p>Introducing the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed acts as a normal bed unless the alarm is triggered.  Once activated, a latch mechanism retracts causing one side of the bed to tilt over along with you.   The bed will no longer lock in horizontal position for 30 minutes after activation, forcing you to not only wake up, but not climb back into bed. Stay woke.</p>
@@ -538,11 +658,11 @@
 				</div>
 				<div class="row">
 					<div class="col-5">
-						<p class="mb-4">Once designed, an initial prototype is built out of Popsicle sticks. This prototype allows us to visualize the vision and assist with elucidating the direction for future design iterations.  For instance, pinch points become more obvious and the observed drop height and drop speed help with understanding the mechanics of rolling out of bed.  Shown is little Matt Damon rolling out of bed in style. </p>
-					<img src="./img/tilting alarm bed/prototype1.jpg" class="img-fluid"></img>
+						<p class="mb-4">Once designed, an initial prototype is built out of Popsicle sticks. This prototype allows us to visualize the vision and assist with elucidating the direction for future design iterations.  For instance, pinch points become more obvious and the observed drop height and drop speed help with understanding the mechanics of rolling out of bed.  Shown is lil' Matt Damon rolling out of bed in style. </p>
+					<img src="./img/tilting alarm bed/prototype1.jpg" class="img-fluid rounded"></img>
 					</div>
 					<div class="col-7">
-					<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid" style="height:27.3rem"></img>
+					<img src="./img/tilting alarm bed/matt damon.gif" class="img-fluid rounded" style="height:27.3rem"></img>
 					</div>
 				</div>
 			</div>
@@ -550,22 +670,22 @@
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Putting it Together</h2>
 				</div>	
-				<p class="mb-4"> The design was shortly finalized and a trip to Home Depot was planned.  After some arduous labour, the bed was built.  Below are a few components that make up the bed, specifically the mechanisms involved with triggering the alarm.  </p> 
+				<p class="mb-4"> After the design was finalized, a trip to Home Depot was planned.  After days of arduous labour, the bed was built.  Below are a few components that make up the bed, specifically the mechanisms involved with triggering the alarm.  </p> 
 				<div class="row">
 					<div class="col-6">
-						<img src="./img/tilting alarm bed/small1.jpg" class="img-fluid "></img>
+						<img src="./img/tilting alarm bed/small1.jpg" class="img-fluid rounded"></img>
 						<figcaption class="figure-caption text-white text-center"><font size="-1">All disassembled parts and sub-assemblies of the bed.</font></figcaption>
 					</div>
 					<figure class="figure col-2">
-						<img src="./img/tilting alarm bed/small2.PNG" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/small2.PNG" class="img-fluid rounded"></img>
 						<figcaption class="figure-caption text-white"><font size="-1">Latch assembly for actuation of the bed.  Retract to trigger, extend to lock.</font></figcaption>
 					</figure>
 					<figure class="figure col-2">
-						<img src="./img/tilting alarm bed/small3.jpg" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/small3.jpg" class="img-fluid rounded"></img>
 						<figcaption class="figure-caption text-white"><font size="-1">A limit switch fixed to the back post is used to detect the position of the top frame.</font></figcaption>
 					</figure>
 					<figure class="figure col-2">
-						<img src="./img/tilting alarm bed/small4.png" class="img-fluid"></img>
+						<img src="./img/tilting alarm bed/small4.png" class="img-fluid rounded"></img>
 						<figcaption class="figure-caption text-white"><font size="-1">The actuation of the latch is triggered by a POC app via Bluetooth.</font></figcaption>
 					</figure>
 				</div>
@@ -576,13 +696,13 @@
 				</div>
 						<div class="row mb-1">
 							<div class="col-7">
-							<img src="./img/tilting alarm bed/falling.gif" class="img-fluid"></img>
+							<img src="./img/tilting alarm bed/falling.gif" class="img-fluid rounded"></img>
 							</div>
 							<div class="col-5">
-							<img src="./img/tilting alarm bed/final.jpg" class="img-fluid"></img>
+							<img src="./img/tilting alarm bed/final.jpg" class="img-fluid rounded"></img>
 							</div>
 						</div>
-						<p> Here is the bed in action. Instead of the traditional approach of waking up through sound, this bed uses the sense of (an excessively aggressive) touch.  This alarm clock comes with a 100% guarantee of waking someone up.  In addition to feeling the impact of the ground, the activation of the latch also creates a gunshot sound.  Although promising in its effectiveness, further persistence of getting this product to market would be met with too many lawsuits. 
+						<p> Here is the bed in action. Instead of the traditional approach of waking up through sound, this bed uses the sense of (an excessively aggressive) touch.  This alarm clock comes with the Blue Clock certification of a 100% guarantee of waking someone up.  Although promising in its effectiveness, further persistence of getting this product to market would be met with too many lawsuits. 
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#bedcar" role="button" data-slide="prev">
@@ -625,6 +745,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
