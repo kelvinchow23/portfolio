@@ -39,6 +39,7 @@
       $('.scroll-to-top').fadeOut();
     }
   });
+  
 
 })(jQuery); // End of use strict
 

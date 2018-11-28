@@ -38,19 +38,19 @@
           <a class="js-scroll-trigger" href="#about">About Me</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#display">Reconfigurable Display</a>
+          <a class="js-scroll-trigger" href="#display" data-toggle="tooltip" title="Electronic screens are flat, rigid boxes" data-placement="left">Reconfigurable Display</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#balance">Balance Rehab Game</a>
+          <a class="js-scroll-trigger" href="#balance" data-toggle="tooltip" title="Physical therapy must be supervised" data-placement="left">Balance Rehab Game</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#bioprinting">Microfluidics</a>
+          <a class="js-scroll-trigger" href="#bioprinting" data-toggle="tooltip" title="Food is prepared in a kitchen" data-placement="left">Microfluidics</a>
         </li>
 		<li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#car">Car Side Camera</a>
+          <a class="js-scroll-trigger" href="#car" data-toggle="tooltip" title="Vehicles require wing mirrors" data-placement="left">Car Side Camera</a>
         </li>
 		<li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#bed">Alarm Clock Bed</a>
+          <a class="js-scroll-trigger" href="#bed" data-toggle="tooltip" title="Beds are designed solely for sleeping" data-placement="left">Alarm Clock Bed</a>
         </li>
       </ul>
     </nav>
@@ -65,7 +65,7 @@
 		<br></br><br></br>
 		<br id="about"></br>
 		<div class="row">
-          <div class="col-2 offset-1">			
+          <div class="col-2 offset-1" data-toggle="tooltip" title="Electronic screens are flat, rigid boxes" data-placement="top">			
 		  <a class="js-scroll-trigger" href="#display">
               <img src="./img/other/i-display.png" class="img-fluid"></img>
             <h4>
@@ -73,7 +73,7 @@
             </h4>
 			</a>
           </div>
-          <div class="col-2">
+          <div class="col-2" data-toggle="tooltip" title="Physical therapy must be supervised" data-placement="top">
 		  	<a class="js-scroll-trigger" href="#balance">
 			<img src="./img/other/i-balance.png" class="img-fluid"></img>
             <h4>
@@ -81,7 +81,7 @@
             </h4>
 			</a>
           </div>
-          <div class="col-2">
+          <div class="col-2" data-toggle="tooltip" title="Food is prepared in a kitchen" data-placement="top">
 		  	<a class="js-scroll-trigger" href="#bioprinting">
 			<img src="./img/other/i-microfluidics.png" class="img-fluid"></img>
             <h4>
@@ -89,7 +89,7 @@
             </h4>
 			</a>
           </div>
-          <div class="col-2">
+          <div class="col-2" data-toggle="tooltip" title="Vehicles require wing mirrors" data-placement="top">
 			<a class="js-scroll-trigger" href="#car">              
 			<img src="./img/other/i-car.png" class="img-fluid"></img>
             <h4>
@@ -97,7 +97,7 @@
             </h4>
 			</a>
           </div>
-          <div class="col-2" >
+          <div class="col-2" data-toggle="tooltip" title="Beds are designed solely for sleeping" data-placement="top">
 			<a class="js-scroll-trigger" href="#bed">
             <img src="./img/other/i-bed.png" class="img-fluid"></img>
             <h4>
@@ -138,9 +138,9 @@
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2>Reconfigurable Display </h2>
-				<h3 class="mb-2">Can you fit a laptop into your pocket? </h3>
+				<h3 class="mb-2">An electronic display with the ability to change size and aspect ratio</h3>
 				</div>
-					<p>Moore's law drives technological advancement to make electronics smaller, true for most cases.  However, the cellphone, arguably the most pervasive electronic device, defies this trend.  Why is this?  One reason is the trade-off between convenience and practicality.  People would rather carry around a lightweight phone in their pocket.  Most people also want large electronic displays, which offer more utility.  The electronic display is the geometric constraint of cell phones, tablets, and laptops.  A device with a reconfigurable display would maximize the convenience and utility benefit of electronic devices.</p>
+					<p>Moore's law drives technological advancement to make electronics smaller. However, the cellphone, the most prevalent electronic device, defies this trend.  Why is this?  Once touchscreens became practical, it created a trade-off between convenience and practicality.  It is more convenient to carry around a smaller phone, but large electronic displays offer more utility. Arguably, the difference between a cellphone, a laptop, and a tablet is the size of the electronic display. Electronics with reconfigurable displays would maximize the convenience and utility benefit of electronic devices.</p>
 					<p>The general approach in this research field is to place rigid LEDs on soft flexible, stretchable substrates (see figure below).  The key issue with this approach is once the substrate is stretched, the pixel density decreases, reducing the image quality. Also, this approach is dependent on the substrate's mechanical properties, which diminish when stretched.  This project proposes a different approach to this problem. </p>
 				<div class="row">	
 					<figure class="figure col-5">
@@ -155,8 +155,8 @@
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">The Initial Design </h2>
 				</div>
-					<p>The first design proposed a solution where 16 individual square "islands", each representing an LED, would be constrained to move uniformly.  Each island was constrained to move linearly on a track and connected to other islands via guide arms.  By moving one island, all islands would move simultaneously.</p>
-					<p> Two major problems of this design forced a redesign.  First, this design required extra space in order to work, defeating the purpose of having a compact design.  Second, this design shared the same flaw as the flexible substrate design. Gaps are created when the islands are in "stretched" state, reducing the pixel density. </p>
+					<p>The first design proposed a solution where 16 individual square "islands", each representing an LED, would move uniformly.  Each island was constrained to move linearly on a track and connected to other islands via guide arms.  By moving one island, all islands would move simultaneously.</p>
+					<p> Two major problems of this design forced a redesign.  First, this design required extra space to function, defeating the purpose of having a compact design.  Second, this design shared the same flaw as the flexible substrate approach, which did not conserve pixel density when stretched. </p>
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-6">
@@ -175,11 +175,11 @@
 				<div class="row mb-3">
 					<figure class="figure col-4 text-center">
 						<img src="./img/reconfigurable display/blocks.png" class="img-fluid mb-2" style="height:12rem"></img>
-						<figcaption class="figure-caption text-justify" style="color:white">First, each island needed to be constrained inside a compact footprint.  This is initially visualized by having 16 islands on four different height levels in its collapsed state.</figcaption>
+						<figcaption class="figure-caption text-justify" style="color:white">The islands needed to be first visualized in the most compact configuration. 16 islands were placed on 4 height levels in its collapsed state.</figcaption>
 					</figure>
 					<figure class="figure col-5 text-center">
 						<img src="./img/reconfigurable display/link.PNG" class="img-fluid mb-2"></img>
-						<figcaption class="figure-caption text-justify" style="color:white">Upon expansion, the bottom islands need to rise to the top level.  This is done by linking islands on different levels through rigid beams.  The design is constrained to allow 1 degree of freedom between 2 coupled islands. </figcaption>
+						<figcaption class="figure-caption text-justify" style="color:white">Upon expansion, the bottom islands needed to rise to the top level.  By linking islands on different levels through rigid beams, only 1 degree of freedom between 2 coupled islands is allowed. </figcaption>
 					</figure>
 					<figure class="figure col-3 text-center">
 						<img src="./img/reconfigurable display/hoberman.gif" class="img-fluid rounded-circle mb-2" style="height:12rem"></img>
@@ -190,7 +190,7 @@
 					<div class="col-8">
 						<img src="./img/reconfigurable display/solidworks stretch.png" class="img-fluid"></img>					
 					</div>
-					<p  class="col-4 text-justify align-self-center" style="font-size:90%">The complete assembly of the prototype is shown on the left.  From left to right, the figure shows a transition from collapsed to expanded state.  Depending on which direction the force is applied, the display prototype can either be stretched from its collapsed 3x3 state to either a 5x5 or a 3x5 shape (shown in a later slide).  Different aspect ratios are beneficial for different applications.</p>
+					<p  class="col-4 text-justify align-self-center" style="font-size:90%"> From left to right, the figure shows the transition from collapsed to expanded state.  Depending on the direction of the applied force, the prototype can expand to different aspect ratios.  This figure shows expansion in two directions for uniform scaling.</p>
 				</div>	
 			</div>
 			<div class="carousel-item">		
@@ -201,9 +201,9 @@
 					<div class="col-8">
 						<img src="./img/reconfigurable display/all parts.jpg" class="img-fluid rounded"></img>					
 					</div>
-					<p class="col-4 align-self-center"> (a) After finishing the design, all the components are 3D-printed. (b) After assembly, the prototype has the ability to expand and collapse. (c) LEDs are wired so each level of LEDs can be independently controlled. (d) One LED is placed on every island.</p>
+					<p class="col-4 align-self-center"> <b>(a)</b> After finishing the design, all the components were 3D-printed. <b>(b)</b> After assembly, the prototype was built, and demonstrated the ability to expand and collapse. <b>(c)</b> LEDs were wired so each level of LEDs could be independently controlled. <b>(d)</b> One LED was placed on every island.</p>
 				</div>
-				<div class="row">
+				<div class="row">	
 					<div class="col-6">
 						<img src="./img/reconfigurable display/expand.gif" class="img-fluid rounded"></img>					
 					</div>
@@ -220,12 +220,12 @@
 				<h2 class="mx-auto mb-3">Bringing the Design into Reality</h2>
 				</div>
 				<div class="row">
-					<div class="col-3"><img src="./img/reconfigurable display/2x2-stretch.gif" class="img-fluid rounded" style="height:28rem"></img></div>
+					<div class="col-3"><img src="./img/reconfigurable display/2x2 stretch.gif" class="img-fluid rounded" style="height:28rem"></img></div>
 					<div class="col-3"><img src="./img/reconfigurable display/scalable.png" class="img-fluid" style="height:28rem"></img></div>
-					<div class="col-6 text-center"><img src="./img/reconfigurable display/2x2-lights.png" class="img-fluid" style="height:12rem"></img>
-					<p class="text-justify">The figure on the left shows the expansion and collapsing of a 2x2 version of the reconfigurable display. The figure in the middle shows the scalability of the display using the current prototype manufacturing method of 3D printing.  The prototype's height can be scaled to under a centimetre.  The figure on the top right demonstrates the constant pixel density after expansion.  The green lights show the pixels on the original top layer and the red lights are from the bottom layers.  
+					<div class="col-6 text-center"><img src="./img/reconfigurable display/2x2-lights.png" class="img-fluid mb-3" style="height:12rem"></img>
+					<p class="text-justify"><b>(a)</b> A 2x2 version of the prototype could be expanded and collapsed to either a 2x3 or a 3x3 state. <b>(b)</b> With the current manufacturing method of 3D printing, the prototype could be scaled down to under a centimetre in height. The device height to width ratio remained the same with scaling. <b>(c)</b> Pixel density was conserved in different device states.
 					</p>
-					<p class="text-justify"> The limitation of this design is the large height.  The height to pixel area needs to be reduced, or else these displays would be cube-like objects.  Nevertheless, this design shows a different, counterintuitive approach to flexible displays.</p>					
+					<p class="text-justify"> This design could shrink further with MEMS fabrication. However, the limitation of this design was the large height-to-width ratio.  A future iteration of this design should focus on flattening the cube-shaped prototype. Nevertheless, this design showed a different, counterintuitive approach to flexible displays.</p>					
 					</div>
 				</div>	
 				<p><i>*Figures from <a href="https://doi.org/10.1002/admt.201800344" style="color:white" target="_blank"><u>Qaiser et al., Adv. Mater. Technol. (2018)</u></a>.</i></p>
@@ -256,7 +256,7 @@
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2>Balance Rehabilitation Game </h2>
-				<h3 class="mb-2">Tagline</h3>
+				<h3 class="mb-2">An independent, novel balance rehabilitation trainer</h3>
 				</div>
 				<p>Individuals suffering from spinal cord injuries (SCI) often have balance instability caused by a reduced neural control of lower-limbed muscles.  Rehabilitation tools have been demonstrated to be effective in repairing the disconnect between brain and body.  Two rehabilitation tools of interest are visual feedback training (VFT) and functional electrical stimulation (FES) therapy.  </p>
 				<div class="row text-center">
@@ -282,52 +282,51 @@
 						<img src="./img/balance game/vft fes.png" class="img-fluid" style="width:90%"></img>
 					</div>
 					<div class="col-4 align-self-center text-justify">
-					<p>We propose a balance rehabilitation tool that combines both visual feedback training with functional electrical stimulation therapy.  Our hypothesis is By combining an engaging training game with stimulation therapy, we hypothesize our balance training tool would amplify and accelerate the rehabilitation effects compared to single-modal approaches.  For more details, refer <u><a href="https://doi.org/10.17975/sfj-2017-016" style="color:black" target="_blank">here</a></u>.</p>
-					
-					<p>My focus on the project was creating the visual feedback training system, which included designing and programming the training system, conducting preliminary trials, and analyzing trial data for system future-proofing.  Another lab member worked on the functional electrical stimulation, and the two parts of the project were merged at a later date. </p> 
+					<p>In this project we propose a balance rehabilitation tool that combines visual feedback training with functional electrical stimulation therapy. By combining an engaging training game with stimulation therapy, we hypothesize that our balance training tool will amplify and accelerate rehabilitation compared to single-modal approaches.</p>
+					<p>Just as the Wii Fit can serve as a personal trainer, a fully developed version of our proposed system can have the same at-home functionality for individuals requiring attention for balance rehabilitation. We can use this system as a platform for patients to rehab in the comfort of their home while giving therapists access to training data for monitoring.</p> 
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Four Task-Oriented Games</h2>
-				<p> One training session includes 4 games played 3 times each.  The games are designed to emulate a collection of muscle strengthening exercises for balance rehabilitation. Each game displays a moving coloured dot on the screen, displaying the individual's centre of position on the force plate.</p>
+				<p> One training session includes 4 games played 3 times each.  The games were designed to emulate a collection of muscle strengthening exercises for balance rehabilitation. Each game displayed a transient coloured dot on the screen, displaying the individual's centre of position on the force plate.</p>
 				</div>
 				<div class="row mb-3">
 					<div class="col-3">
 						<img src="./img/balance game/target.png" class="img-fluid"></img>
 					</div>
 					<div class="col-3">
-					<p style="line-height:1rem;"><strong>TARGET:</strong> <font size="-1">This game trains an individual to stand as still as possible in the optimal balance position. The objective is to keep the red dot as close to the centre as possible.</font></p>
+					<p><strong>TARGET:</strong> <font size="-1">This game trained an individual to stand as still as possible in the optimal balance position. The objective was to keep the red dot as close to the centre as possible.</font></p>
 					</div>
 					<div class="col-3">
 						<img src="./img/balance game/hunting.png" class="img-fluid"></img>
 					</div>
 					<div class="col-3">
-						<p style="line-height:1rem;">
-						<strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appears and the objective is to move the red dot inside that target and hold the position for 3 seconds.  Once successful, a new target appears in a different location. This game trains muscle reflexes by inducing constant shifting of body weight.</font></p>
+						<p>
+						<strong>HUNTING:</strong> <font size="-1">A randomly spawning blue target appeared and the goal was to move the red dot inside the target and holding the position for 3 seconds.  Once successful, a new target would appear in a different location. This game trained muscle reflexes by inducing constant shifting of body weight.</font></p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-3 no-gutters">
+					<div class="col-3">
 						<img src="./img/balance game/ellipse.png" class="img-fluid"></img>
 					</div>
-					<div class="col-3 no-gutters">
-					<p style="line-height:1rem;"><strong>ELLIPSE:</strong> <font size="-1">A target follows an elliptical orbit at the edge of an individual's range of motion.  While the dot is in the target, the target position increments along the orbit path.  This forces the participant to keep their centre of balance away from the middle for the entire duration of the game.</font></p>
+					<div class="col-3">
+					<p><strong>ELLIPSE:</strong> <font size="-1">A target followed an elliptical orbit at the edge of an individual's range of motion.  Once in the target, the target would increment along its path.  This forced the participant to keep their centre of balance away from neutral position for the whole game.</font></p>
 					</div>
-					<div class="col-3 no-gutters">
+					<div class="col-3">
 						<img src="./img/balance game/colour.png" class="img-fluid"></img>
 					</div>
-					<div class="col-3 no-gutters">
-						<p style="line-height:1rem;">
-						<strong>COLOUR MATCHING:</strong> <font size="-1">In this game, the dot changes colour.  The individual needs to move the dot in the matching coloured target. Once successful, the dot changes to a different	colour.  This game requires some mental processing as well as causing drastic shifts in body weight.</font></p>
+					<div class="col-3">
+						<p>
+						<strong>COLOUR MATCHING:</strong> <font size="-1">In this game, the dot changed colour.  The individual needed to move the dot to its matching coloured target. Once successful, the dot changed to a different	colour.  This game required mental processing and drastic shifts in body weight.</font></p>
 					</div>
 				</div>					
 			</div>
 			<div class="carousel-item">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Two Balance Assessments</h2>
-				<p>In addition to the games, the training session included two balance assessments to track progress of balance improvement over multiple training sessions.  These assessments were standard tests that have a strong correlation to an individual's balance ability.</p>
+				<p>In addition to the games, the training session included two balance assessments to track progress of balance improvement over multiple training sessions.  These assessments were standard tests, giving performance indicators that show strong correlations to an individual's balance ability.</p>
 				</div>
 				<div class="row mb-2">
 					<div class="col-6 text-center">					
@@ -335,7 +334,7 @@
 					</div>
 					<div class="col-6">
 						<h4>Static Balance Assessment</h4>
-						<p>An individual is asked to stand on the force plate with their eyes closed as still as possible for 100 seconds. During this time, a centre of position (COP) time series will record and track the involuntary sway of the individual.  For these studies, three performance indicators are taken: root means squared (RMS) in the (1) anterior-posterior (front to back) and (2) medial-lateral (side to side) direction, and (3) 95% confidence ellipse of the data.</p>
+						<p>An individual was asked to stand on the force plate with their eyes closed as still as possible for 100 seconds. During this time, a centre of position (COP) time series would record and track the involuntary sway of the individual.  For these studies, three performance indicators were taken: root means squared (RMS) in the (1) anterior-posterior (front to back) and (2) medial-lateral (side to side) direction, and (3) 95% confidence ellipse of the data.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -344,7 +343,7 @@
 					</div>
 					<div class="col-6">
 						<h4>Dynamic Balance Assessment</h4>
-						<p>An individual is prompted by our GUI	 to perform the "star reaching task" where we ask the individual to lean as far as possible without losing balance in the indicated direction.  After the individual reached in all 8 directions, the points are plotted and and joined to create an octagon.  The area of the octagon is the performance indicator for dynamic balance, which is called the dynamic balance area.</p>
+						<p>An individual was prompted by our GUI (left) to perform the "star reaching task", where the individual leaned as far as possible without losing balance in the prompted direction.  After reaching in 8 directions, 8 data points were gathered, plotted, and joined to form an octagon.  The area of the octagon gave the performance indicator for dynamic balance called dynamic balance area.</p>
 					</div>
 				</div>
 			</div>
@@ -357,10 +356,10 @@
 					<img src="./img/balance game/data.png" class="img-fluid"></img>
 					</div>
 					<div class="col-6">
-					<p class="mb-4">Seven able-bodied individuals ran through the training session to test the effectiveness of the system. Three out of four games (y-axis) showed bivariate correlation between balance ability (x-axis), indicating the games were appropriately designed.</p> 
+					<p class="mb-4">Seven able-bodied individuals ran through the training session to test the effectiveness of the system. Three out of four games (y-axis) showed bivariate correlation between balance ability (x-axis), indicating the games were appropriately designed. For more details on this project, refer <u><a href="https://doi.org/10.17975/sfj-2017-016" style="color:black" target="_blank">here</a></u>.</p> 
 					<h4 class="mb-2">Future Direction</h4>
 					<p>One problem was for some games (ellipse and colour matching), everyone had high scores. This made it difficult to distinguish an individual's balance ability with game scores. Immediately after the trial run, this problem was addressed by changing the scoring system to favour individuals who could keep their balance position closer to the centre of the game targets.</p> 
-					<p>The next step would be to conduct another trial run on able-bodied participants, this time incorporating functional electrical stimulation with visual feedback training.  Once done and further system optimizations are performed, the system would be used for clinical trials on individuals with spinal cord injuries to determine the effectiveness of this rehabilitation tool.</p>
+					<p>The next step would be to conduct another trial run on able-bodied participants, this time incorporating functional electrical stimulation.  Once completed and further system optimizations are performed, the system would be ready for use in clinical trials on individuals with spinal cord injuries to determine the effectiveness of this rehabilitation tool.</p>
 					</div>
 				</div>
 			</div>
@@ -390,17 +389,17 @@
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-1">Microfluidics </h2>
-				<h3 class="mb-3">Tagline</h3>
+				<h3 class="mb-3">Microfluidics for molecular gastronomy</h3>
 				</div>
+				<p>Microfluidics is the manipulation of fluids at small volumes in devices with microscale channel dimensions. This field of study has become increasingly popular, especially for biology. Microfluidic devices are bio-compatible and the small volumes are advantageous since many biological samples are expensive and often difficult to extract at large quantities. Bioprinting is the technology intertwining 3D printing and biology showing promising potential in personalized healthcare. Bio-printers range in capabilities, with some focusing on biocompatible materials while others engineer tissue by depositing bio-inks containing living cells.</p>
+				<p>At the Guenther lab at the University of Toronto, one research focus is to develop microfluidic bioprinting technologies. As most of my work is currently in progress and unpublished, it will not be disclosed in this portfolio. Instead, I will highlight smaller projects using microfluidics for molecular gastronomy.</p>
+				<h5>Select Guenther Lab Microfluidic Bioprinting Technologies </h5>
 				<div class="row text-center">
-					<div class="col-7 align-self-center text-justify">
-					<p>Microfluidics is the manipulation of fluids at low volumes in devices with micron-level dimensions. This field of study has become increasingly popular, especially in biological applications.  In general, the advantages of microfluidics includes its quick, cheap, and simple manufacturing process, the ability to scale designs for high-throughput studies, and its increased measurement accuracy due to the increased area-to-volume ratio. Related to biology, microfluidic devices are typically bio-compatible, and the small volumes are advantageous since many bio-samples are expensive and often difficult to extract at large quantities. </p>
-					<p>Bioprinting is the technology intertwining 3D printing and biology. Bio-printers range in capabilities, with some focusing on biocompatible materials that can be used for implantation while others deposit bio-inks containing living cells.  Bio-printing is a promising technology with its potential applications in personalized healthcare.</p>
-					<p>At the Guenther lab at the University of Toronto, one research focus is developing microfluidic bioprinting technologies for tissue engineering.  As most of my work is currently in progress and unpublished, it will not be disclosed in this portfolio. I will instead highlight some smaller microfluidic projects and its potential applications in another field.  A couple of the Guenther Lab microfluidic bio-printing technologies are shown to the right.</p>
+					<div class="col-5 offset-1">
+						<a href="https://doi.org/10.1002/adma.201201442" target="_blank"><img src="./img/microfluidics and bioprinting/intro1.png" class="img-fluid rounded" style="width:90%"></img></a>
 					</div>
 					<div class="col-5">
-						<a href="https://doi.org/10.1002/adma.201201442" target="_blank"><img src="./img/microfluidics and bioprinting/intro1.png" class="img-fluid" style="width:90%"></img></a>
-						<a href="https://pubs.rsc.org/en/content/articlehtml/2018/lc/c7lc01236e" target="_blank"><img src="./img/microfluidics and bioprinting/intro2.gif" class="img-fluid" style="width:90%"></img></a>
+						<a href="https://pubs.rsc.org/en/content/articlehtml/2018/lc/c7lc01236e" target="_blank"><img src="./img/microfluidics and bioprinting/intro2.gif" class="img-fluid rounded" style="width:90%"></img></a>
 					</div>
 				</div>
 			</div>
@@ -408,7 +407,7 @@
 				<div class="content-section-heading">
 				<h2 class="mx-auto mb-3">Molecular Gastronomy with Microfluidics</h2>
 				</div>
-					<p>Molecular gastronomy is where food meets science to flip traditional culinary practices.  With the same ingredients, the perception of taste can be altered using molecular gastronomy.  Here, we focus on using microfluidics to generate microscale edibles. (Please be prepared to exercise some level of imagination.)</p>
+					<p>Molecular gastronomy is where food meets science to flip traditional culinary practices.  With the same ingredients, the perception of taste can be altered through molecular gastronomy.  Here, we focus on using microfluidics to generate microscale edibles. (Please be prepared to exercise some level of imagination. Thanks.)</p>
 					<p>3 different manufacturing techniques to create 3 different microfluidic devices to create 3 different dishes will be described. The manufacturing process flow to create the devices are similar. All 3 devices are flow-focusing devices with two solutions: sodium alginate and calcium chloride (CaCl<sub>2</sub>). The gelation of alginate depends on the ionic reaction between sodium alginate and calcium ions, which creates edible, tastless calcium alginate gels. All devices contain a junction where alginate-filled channel is sandwiched in between two CaCl<sub>2</sub>-filled channels.  By controlling the flowrate ratios, the dimensions of the produced gels can be tuned.
 					</p>
 					<div class="row">
@@ -490,18 +489,25 @@
 				</div>
 					<p>Spherification is a commonly used technique in molecular gastronomy to create solid spherical gels.  Using a flow-focusing microfluidic device similar to the falooda maker, oil and alginate emulsions can be formed to make alginate droplets, which can then be later gelled in a bath of calcium chloride.</p>
 					<div class="row text-center">
-						<div class="col-4">
-							<img src="./img/microfluidics and bioprinting/5 layers-flower.jpg" class="img-fluid rounded-circle" style="height:12rem"></img>
-							<p class="text-justify">This device is a five-layer lasercut PMMA device with 5 flow-focusing junctions.  All patterns are cut all the way through.  Most flow focusing junctions look similar because the physics of droplet breakup is favourable.  Instead of altering the junction, the design focused on seamlessly integrating the junction in a more aesthetic design.  The flower in the design is a stylized version of the Bauhinia blakeana, featured on the flag and emblem of Hong Kong. </p>
+						<div class="col-9">
+							<img src="./img/microfluidics and bioprinting/5 layers-flower.png" class="img-fluid" style="height:7rem"></img>
+							<p class="text-justify">This five-layer lasercut PMMA device has 5 flow-focusing junctions. The flow focusing junction is a typical design, but is seamlessly hidden in a more aesthetic device design.  The flower shown is a stylized version of the Bauhinia blakeana, featured on the flag and emblem of Hong Kong. </p>
+							<div class="row">
+								<div class="col-3">
+									<img src="./img/microfluidics and bioprinting/closeup-junction.png" class="img-fluid rounded-circle"></img>
+									<p>Close up of the 5 junctions.
+								</div>
+								<div class="col-4">
+									<img src="./img/microfluidics and bioprinting/droplets.gif" class="img-fluid rounded"></img>
+								</div>
+								<p class="col-5">Text here. </p>
+							</div>
 						</div>
-						<div class="col-4">
-							<img src="./img/microfluidics and bioprinting/flower.jpg" class="img-fluid rounded" style="height:12rem"></img>
-							<p>This is the device after bonding.  The inlets are at the top of the device and the outlet is at the bottom.</p>
-							<p>Closeup gif of droplet formation.</p>
-						</div>
-						<div class	="col-4">
-							<img src="./img/microfluidics and bioprinting/printer.png" class="img-fluid rounded"></img>
-							<p>bunch of caviar.</p>
+						<div class="col-3">
+							<img src="./img/microfluidics and bioprinting/flower3.jpg" class="img-fluid rounded-circle"></img>
+							<p>This is the device after bonding.</p>
+							<img src="./img/microfluidics and bioprinting/flower3.jpg" class="img-fluid rounded-circle"></img>
+							<p>Caviar.</p>
 						</div>
 					</div>
 			</div>	
@@ -532,11 +538,11 @@
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2>Vehicular Rear-View Camera System </h2>
-				<h3 class="mb-4">Looking forward to looking backwards </h3>
+				<h3 class="mb-4">A camera-based module to replace the wing mirror</h3>
 				</div>
-				<p>Vehicles come in all sorts of shapes and sizes from luxury cars to common sedans, from hybrids to vintage cars, or from trucks to Smart cars. While the rest of the vehicle has morphed to fit modern times, the wing mirror design has stagnated and looks more or less the same on most vehicles (see vehicles below).  Over time, there have been incremental design changes to the side mirror and a drastic overhaul is necessary since the wing mirror is a major design flaw.</p>  
-				<p>First, the wing mirror is a safety hazard.  It creates blindspot zones, which has made it standard procedure for drivers to keep their head on a 180° swivel to perform blindspot checks before changing lanes. This flaw has existed for over a century and has never been fully addressed.  At fast speeds, fractions of a a second can be the difference between life or death. The safest option is for drivers to always keep their eyes on the road in front of them.  Second, the wing mirror is the only part of the vehicle that unexpectedly extrudes out from the body of the car.  Although relatively small, this obtrusion can cause up to 7% of total vehicle drag during driving.  </p>
-				<p class="mb-5">Automakers are pushing to eliminate the law requiring vehicles to have these anachronistic wing mirrors. This project previews the future of wing mirror-less vehicles.</p>
+				<p>Vehicles come in all sorts of shapes and sizes from sports cars to common sedans, from hybrids to vintage cars, or from trucks to Smart cars. While the rest of the vehicle has morphed to fit modern times, the wing mirror design has stagnated and looks comparable between most vehicles (see vehicles below).</p>  
+				<p>The wing mirror design has been a major design flaw for over a century and requires a drastic design change. First, the wing mirror is a safety hazard.  It creates blindspot zones, making it standard procedure for drivers to keep their head on a 180° swivel for blindspot checks before changing lanes. This flaw has existed for over a century and has never been fully addressed.  At fast speeds, fractions of a a second can be the difference between life or death. The safest option is for drivers to always keep their eyes on the road in front of them.  Second, the wing mirror is the only part of the vehicle that unexpectedly extrudes out from the body of the car.  Although relatively small, this obtrusion can cause up to 7% of total vehicle drag during driving.  </p>
+				<p class="mb-5">Automakers are pushing to eliminate the law requiring vehicles to have anachronistic wing mirrors. We (hopefully) preview the future of wing mirror-less vehicles.</p>
 				<img src="./img/vehicular rear view camera/cars.png" class="img-fluid mb-3"></img>
 			</div>
 			<div class="carousel-item">		
@@ -572,7 +578,7 @@
 					</div>
 					<div class="col-4 text-center">
 						<img src="./img/vehicular rear view camera/blindspot2.gif" class="img-fluid mb-1 rounded" style="width:90%"></img>
-						<p class="text-justify">On the left, the camera (large frame) and side mirror (small frame) views show our car being passed by another car.  A schematic is shown on the top-right.  At first, the car is in both the camera and side mirror view.  When the car leaves the side mirror view, it enters the normal blindspot of our vehicle.  Yet, in our camera view, the passing car is still in frame and only leaves the frame when the car has fully overtaken our vehicle.  Thus, our camera eliminates the blindspot of cars in the adjacent lane.</p>
+						<p class="text-justify">On the left, the camera (large frame) and side mirror (small frame) views show our car being passed by another car.  A schematic is shown on the top-right.  At first, the car is in both the camera and side mirror view.  When the car leaves the side mirror view, it enters the normal blindspot of our vehicle.  Yet, in our camera view, the passing car is still in frame and only leaves the frame when the car has fully our vehicle.  Thus, our camera eliminates the blindspot of cars in the adjacent lane.</p>
 						</div>
 				</div>
 			</div>
@@ -633,7 +639,7 @@
 			<div class="carousel-item active">		
 				<div class="content-section-heading">
 				<h2>Alarm Clock Bed </h2>
-				<h3 class="mb-2">For those mornings where you need a little push</h3>
+				<h3 class="mb-2">Integrating an alarm clock into a bed</h3>
 				</div>
 				<p>Have you ever slept through your alarm and missed an important meeting or exam? Are you the type of person that hits the snooze button 25 times every morning? Do you typically lie in bed in a depressing state of Weltschmerz, requiring all the will and strength in your mind and body to drag yourself out of bed?  We've all been there.  Mornings are the worst and traditional alarms clocks just don't cut it.  This collage of memes evokes society's frustration with this common problem.</p>
 			<img src="./img/tilting alarm bed/collage.jpg" class="img-fluid rounded"></img>
@@ -730,6 +736,12 @@
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
+		  <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" data-toggle="popover" data-placement="top" title="Contributions" data-content="Project 1: Reconfigurable Display
+I take credit for the original design.  I take no credit for the figures on the last slide.">
+              <i class="far fa-copyright"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
@@ -745,7 +757,17 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+	<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+		$('[data-toggle="popover"]').popover({
+		container:'body'
+		})
+		$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+	})
+</script>
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
