@@ -93,7 +93,7 @@ h6 {
   position: relative;
   display: table;
   width: 100%;
-  height: 37rem;
+  height: 38rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/other/masthead16-9.png");
@@ -215,12 +215,6 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.toronto {
-  height: 10rem;
-  width:  10rem;
-  content: url("../img/other/toronto.png"); 
-}
-
 .portfolio {
 	min-height: 35rem;
 	padding-top: 1rem;
@@ -231,12 +225,6 @@ h6 {
 	min-height: 20rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-}
-
-.waterloo {
-  height: 10rem;
-  width:  10rem;
-  content: url("../img/other/waterloo.png"); 
 }
 
 .container: {
