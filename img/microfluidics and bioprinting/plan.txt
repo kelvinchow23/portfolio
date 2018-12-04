@@ -1,0 +1,18 @@
+Slide 1: Intro tangential projects, can't disclose current work
+
+Slide 2&3: Molecular Gastronomy pasta hydrogels
+	Design - stack 3 layers
+	Milled PMMA mold
+	Epoxy Stamps
+	Circular PMMA stamps
+	stack hot embosser
+	Replica of milled mold - scalable
+	bonding and setup
+	fibers petri dish and dessert
+
+Slide 4: Hong Kong caviar, closeup droplet formation, large device view, end product
+
+Slide 5: Bioprinting labview program, setup
+	image of setup and program and description
+
+

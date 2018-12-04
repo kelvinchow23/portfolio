@@ -1,0 +1,25 @@
+Slide 1: Intro
+Have you ever missed an important meeting, an exam, or a flight because you couldn't hear your alarm?  The night before a big day, are you the type to set 5 alarms
+and tell all your friends and family to call you and make sure you don't miss the big event?   If you have missed even one alarm in your life, the doubt will always 
+creep in your mind that you could sleep through the alarm.  This problem has impacted society gravely as justified by the amount of memes on this topic, and it is 
+imperative that a new, fool-proof method is discovered.  
+
+Slide 2: Plan Render
+Introducing... the solution to all your morning problems.  A bed that literally kicks you out of bed.  The tilting alarm bed 
+acts as a normal bed unless the alarm is triggered, which tilts one side of the bed (along with you).  Once triggered, the bed will no 
+longer be allowed to stay in horizontal position for 30 minutes, forcing you to not only wake up, but not go back to sleep. Stay woke.  
+
+Slide 3: Initial Prototype
+Once designed, an initial prototype is built of popsicle sticks and glue.  This prototype allows us to visualize
+the vision and assist with clarifying the direction for future design iterations.  Shown is Matt Damon rolling out of bed in style. 
+
+Slide 4: Small Parts
+Limit switch determining whether the bed is at horizontal position. 
+The acutation of this latch allows for the bed to drop or to lock it in horizontal position. 
+Parts and sub-assembies of the bed.
+Actuation of the bed is controlled through an app by triggering a solenoid valve.
+
+Slide 5: Final Product
+Here is the bed in all its beautiful glory. 
+Future vision: Further persistance of getting this product to market would be met with too many lawsuits.  
+It was a fun project though :). Brought to you by The Blue Clock, University of Waterloo. 
