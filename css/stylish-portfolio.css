@@ -276,10 +276,10 @@ a:hover, a:focus, a:active {
 }
 
 .carousel-control-prev {
-	left: -3.8rem;
+	left: -20%;
 	top:-1rem;
 	bottom:-1rem;
-	width: 4rem;
+	width: 20%;
 	background-color: white;
 }
 
@@ -288,10 +288,10 @@ a:hover, a:focus, a:active {
 }
 
 .carousel-control-next {
-	right: -3.8rem;
+	right: -20%;
 	top: -1rem;
 	bottom:-1rem;
-	width: 4rem;
+	width: 20%;
 	background-color: white;
 
 }
