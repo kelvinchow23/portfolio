@@ -93,7 +93,7 @@ h6 {
   position: relative;
   display: table;
   width: 100%;
-  height: 38rem;
+  height: 44rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/other/masthead16-9.png");
@@ -223,7 +223,7 @@ h6 {
 
 .about {
 	min-height: 20rem;
-	padding-top: 1rem;
+	padding-top: 2rem;
 	padding-bottom: 1rem;
 }
 
@@ -276,10 +276,10 @@ a:hover, a:focus, a:active {
 }
 
 .carousel-control-prev {
-	left: -20%;
+	left: -10%;
 	top:-1rem;
 	bottom:-1rem;
-	width: 20%;
+	width: 10%;
 	background-color: white;
 }
 
@@ -288,10 +288,10 @@ a:hover, a:focus, a:active {
 }
 
 .carousel-control-next {
-	right: -20%;
+	right: -10%;
 	top: -1rem;
 	bottom:-1rem;
-	width: 20%;
+	width: 10%;
 	background-color: white;
 
 }
