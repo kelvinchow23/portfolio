@@ -1,0 +1,22 @@
+Slide 1: Intro
+	Hackaday and UCPLA collab.  Pilot project UCPLA. purpose of the project. Problem, goal, dream. 2 month sprint
+	Hackaday logo, ucpla logo, ucpla artists
+Slide 2: Concept
+	Painting log. Inspiration from painting artists at UCPLA. two videos of painting + devices  Link to proposal video. 
+	Why just IMU? Simple to integrate, funky looking devices for flex resistors. 
+	
+	painting with different extremities, my paint videos
+ 
+Slide 3: User Testing Session
+
+	recalibration, first user testing session gif
+
+Slide 4: Further Development: Hardware updates + Roku control
+
+	hardware images, final devices, roku video
+
+Slide 5: To be continued... Future Roadmap + final presentation link
+
+	shipment of 3 devices, 
+Often, wearable technology is seen as futuristic.  I think there's a real application here for helping people who 
+really need it.  Incremental application.
